@@ -1,0 +1,4 @@
+/usr/bin/cmake -DCMAKE_BUILD_TYPE=Debug -G "Unix Makefiles" -S /tmp/tmp.CXdDzTaTx4 -B /tmp/tmp.CXdDzTaTx4/cmake-build-debug-remote-host
+-- Configuring done
+-- Generating done
+-- Build files have been written to: /tmp/tmp.CXdDzTaTx4/cmake-build-debug-remote-host

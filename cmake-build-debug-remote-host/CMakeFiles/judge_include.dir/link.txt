@@ -1,0 +1,2 @@
+/usr/bin/ar qc libjudge_include.a CMakeFiles/judge_include.dir/src/include/argtable3.c.o CMakeFiles/judge_include.dir/src/command/command_handler.c.o CMakeFiles/judge_include.dir/src/exit/exit_handler.c.o CMakeFiles/judge_include.dir/src/data/result.c.o CMakeFiles/judge_include.dir/src/data/config.c.o
+/usr/bin/ranlib libjudge_include.a
