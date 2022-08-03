@@ -30,7 +30,7 @@ int main(int argc, char *argv[]) {
             command_args_list.err_path = arg_strn(NULL, "err-path", STR_PLACE, 0, 1, "Set error output path."),
             command_args_list.args = arg_strn(NULL, "args", STR_PLACE, 0, 255, "Set parameters. (Amount: 0 ~ 255)"),
             command_args_list.env = arg_strn(NULL, "env", STR_PLACE, 0, 255, "Set env. (Amount: 0 ~ 255)"),
-            command_args_list.seccomp_rule = arg_strn(NULL, "seccomp", STR_PLACE, 0, 1, "Set seccomp rule name."),
+            command_args_list.seccomp_rule = arg_strn(NULL, "seccomp", "<? | string value>", 0, 1, "Set seccomp rule name."),
 
             command_args_list.end = arg_end(20)
     };

@@ -8,6 +8,7 @@
 
 #include "../data/config.h"
 #include "../exit/exit_handler.h"
+#include "../seccomp/seccomp_handler.h"
 
 void check_rlimit(int code) {
     if (code != 0) {
@@ -43,6 +44,9 @@ void thread_handler(struct config *_c) {
             && dup2(fileno(err), fileno(stderr));
     if (!dup2_flag) {
         exception_exit(HANDLE_COPY_FAILED);
+    }
+    if (seccomp_handler(_c) != 0) {
+        exception_exit(SET_SECCOMP_FAILED);
     }
     execve(_c->execute_path, _c->args, _c->env);
     exception_exit(EXECVE_FAILED);

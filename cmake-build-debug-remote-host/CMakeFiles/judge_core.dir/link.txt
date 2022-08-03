@@ -1,1 +1,1 @@
-/usr/bin/cc -g CMakeFiles/judge_core.dir/src/main.c.o -o judge_core  -lm libjudge_include.a -lm 
+/usr/bin/cc -g CMakeFiles/judge_core.dir/src/main.c.o -o judge_core  -lm -lseccomp libjudge_include.a -lm -lseccomp 

@@ -14,7 +14,8 @@ enum {
     HANDLE_COPY_FAILED = -6,
     EXECVE_FAILED = -7,
     CAN_NOT_CREATE_THREAD = -8,
-    WAIT_FAILED = -9
+    WAIT_FAILED = -9,
+    SET_SECCOMP_FAILED = -10
 };
 
 void normal_exit();

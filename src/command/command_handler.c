@@ -2,6 +2,7 @@
 // Created by ShawnGao on 2022/7/30.
 //
 #include "stdio.h"
+#include "string.h"
 #include "../include/argtable3.h"
 #include "../data/config.h"
 #include "command_args.h"
@@ -36,6 +37,16 @@ void command_args_handler(void *arg_table, char program_name[], struct config *_
         arg_print_syntax(stdout, arg_table, "\n\n");
         arg_print_glossary(stdout, arg_table, " %-35s %s\n");
         normal_exit();
+    }
+    if (_args->seccomp_rule->count > 0) {
+        if (strcmp(_args->seccomp_rule->sval[0], "?") == 0) {
+            printf("Seccomp rule list: \n");
+            printf("%s \t\t\t\t %s\n", "sys", "Deny system call and thread operating.(This is a general rule.)(Except: execve)");
+            printf("%s \t\t %s\n", "c_or_cpp_white_rule", "System calls allowed in C/C++.");
+            normal_exit();
+        }
+    } else {
+        _config->seccomp_rule_name = "sys";
     }
     if (_args->version->count > 0) {
         printf("Judge core version: 0.1\n");
