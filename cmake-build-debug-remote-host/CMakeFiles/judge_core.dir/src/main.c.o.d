@@ -39,4 +39,7 @@ CMakeFiles/judge_core.dir/src/main.c.o: /tmp/tmp.CXdDzTaTx4/src/main.c \
  /tmp/tmp.CXdDzTaTx4/src/command/command_handler.h \
  /tmp/tmp.CXdDzTaTx4/src/command/../data/config.h \
  /tmp/tmp.CXdDzTaTx4/src/exit/exit_handler.h \
- /tmp/tmp.CXdDzTaTx4/src/exit/exit_status_code.h
+ /tmp/tmp.CXdDzTaTx4/src/execute/execute_handler.h \
+ /tmp/tmp.CXdDzTaTx4/src/execute/../data/config.h \
+ /tmp/tmp.CXdDzTaTx4/src/execute/../data/result.h \
+ /tmp/tmp.CXdDzTaTx4/src/data/result.h

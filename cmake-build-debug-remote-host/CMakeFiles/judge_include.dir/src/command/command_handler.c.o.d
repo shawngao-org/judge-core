@@ -38,5 +38,4 @@ CMakeFiles/judge_include.dir/src/command/command_handler.c.o: \
  /usr/include/x86_64-linux-gnu/bits/types/__locale_t.h \
  /tmp/tmp.CXdDzTaTx4/src/command/../data/config.h \
  /tmp/tmp.CXdDzTaTx4/src/command/command_args.h \
- /tmp/tmp.CXdDzTaTx4/src/command/../exit/exit_handler.h \
- /tmp/tmp.CXdDzTaTx4/src/command/../exit/exit_status_code.h
+ /tmp/tmp.CXdDzTaTx4/src/command/../exit/exit_handler.h

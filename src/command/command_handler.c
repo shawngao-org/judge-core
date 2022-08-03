@@ -6,7 +6,6 @@
 #include "../data/config.h"
 #include "command_args.h"
 #include "../exit/exit_handler.h"
-#include "../exit/exit_status_code.h"
 
 void set_config_int_value(int *key, int value) {
     if (value < 1) {

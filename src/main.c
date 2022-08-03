@@ -3,7 +3,7 @@
 #include "command/command_args.h"
 #include "command/command_handler.h"
 #include "exit/exit_handler.h"
-#include "exit/exit_status_code.h"
+#include "execute/execute_handler.h"
 #include "data/result.h"
 
 #define INT_PLACE "<int value>"
@@ -47,5 +47,12 @@ int main(int argc, char *argv[]) {
     command_args_handler(arg_table, program_name, &_config, &command_args_list);
     struct result _result;
     init_result(&_result);
+    execute_handler(&_config, &_result);
+    printf("CPU time: %d\n", _result.cpu_time);
+    printf("Real time: %d\n", _result.real_time);
+    printf("Memory used: %ld\n", _result.memory);
+    printf("Signal code: %d\n", _result.signal_code);
+    printf("Exit code: %d\n", _result.exit_code);
+    printf("Last result: %d\n", _result.result);
     return 0;
 }

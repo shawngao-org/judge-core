@@ -11,8 +11,12 @@ set(CMAKE_DEPENDS_DEPENDENCY_FILES
   "/tmp/tmp.CXdDzTaTx4/src/command/command_handler.c" "CMakeFiles/judge_include.dir/src/command/command_handler.c.o" "gcc" "CMakeFiles/judge_include.dir/src/command/command_handler.c.o.d"
   "/tmp/tmp.CXdDzTaTx4/src/data/config.c" "CMakeFiles/judge_include.dir/src/data/config.c.o" "gcc" "CMakeFiles/judge_include.dir/src/data/config.c.o.d"
   "/tmp/tmp.CXdDzTaTx4/src/data/result.c" "CMakeFiles/judge_include.dir/src/data/result.c.o" "gcc" "CMakeFiles/judge_include.dir/src/data/result.c.o.d"
+  "/tmp/tmp.CXdDzTaTx4/src/execute/execute_handler.c" "CMakeFiles/judge_include.dir/src/execute/execute_handler.c.o" "gcc" "CMakeFiles/judge_include.dir/src/execute/execute_handler.c.o.d"
   "/tmp/tmp.CXdDzTaTx4/src/exit/exit_handler.c" "CMakeFiles/judge_include.dir/src/exit/exit_handler.c.o" "gcc" "CMakeFiles/judge_include.dir/src/exit/exit_handler.c.o.d"
   "/tmp/tmp.CXdDzTaTx4/src/include/argtable3.c" "CMakeFiles/judge_include.dir/src/include/argtable3.c.o" "gcc" "CMakeFiles/judge_include.dir/src/include/argtable3.c.o.d"
+  "/tmp/tmp.CXdDzTaTx4/src/kill/kill.c" "CMakeFiles/judge_include.dir/src/kill/kill.c.o" "gcc" "CMakeFiles/judge_include.dir/src/kill/kill.c.o.d"
+  "/tmp/tmp.CXdDzTaTx4/src/seccomp/seccomp_handler.c" "CMakeFiles/judge_include.dir/src/seccomp/seccomp_handler.c.o" "gcc" "CMakeFiles/judge_include.dir/src/seccomp/seccomp_handler.c.o.d"
+  "/tmp/tmp.CXdDzTaTx4/src/thread/thread_handler.c" "CMakeFiles/judge_include.dir/src/thread/thread_handler.c.o" "gcc" "CMakeFiles/judge_include.dir/src/thread/thread_handler.c.o.d"
   )
 
 # Targets to which this target links.

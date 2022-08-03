@@ -214,6 +214,30 @@ src/data/result.c.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/judge_include.dir/build.make CMakeFiles/judge_include.dir/src/data/result.c.s
 .PHONY : src/data/result.c.s
 
+src/execute/execute_handler.o: src/execute/execute_handler.c.o
+.PHONY : src/execute/execute_handler.o
+
+# target to build an object file
+src/execute/execute_handler.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/judge_include.dir/build.make CMakeFiles/judge_include.dir/src/execute/execute_handler.c.o
+.PHONY : src/execute/execute_handler.c.o
+
+src/execute/execute_handler.i: src/execute/execute_handler.c.i
+.PHONY : src/execute/execute_handler.i
+
+# target to preprocess a source file
+src/execute/execute_handler.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/judge_include.dir/build.make CMakeFiles/judge_include.dir/src/execute/execute_handler.c.i
+.PHONY : src/execute/execute_handler.c.i
+
+src/execute/execute_handler.s: src/execute/execute_handler.c.s
+.PHONY : src/execute/execute_handler.s
+
+# target to generate assembly for a file
+src/execute/execute_handler.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/judge_include.dir/build.make CMakeFiles/judge_include.dir/src/execute/execute_handler.c.s
+.PHONY : src/execute/execute_handler.c.s
+
 src/exit/exit_handler.o: src/exit/exit_handler.c.o
 .PHONY : src/exit/exit_handler.o
 
@@ -262,6 +286,30 @@ src/include/argtable3.c.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/judge_include.dir/build.make CMakeFiles/judge_include.dir/src/include/argtable3.c.s
 .PHONY : src/include/argtable3.c.s
 
+src/kill/kill.o: src/kill/kill.c.o
+.PHONY : src/kill/kill.o
+
+# target to build an object file
+src/kill/kill.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/judge_include.dir/build.make CMakeFiles/judge_include.dir/src/kill/kill.c.o
+.PHONY : src/kill/kill.c.o
+
+src/kill/kill.i: src/kill/kill.c.i
+.PHONY : src/kill/kill.i
+
+# target to preprocess a source file
+src/kill/kill.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/judge_include.dir/build.make CMakeFiles/judge_include.dir/src/kill/kill.c.i
+.PHONY : src/kill/kill.c.i
+
+src/kill/kill.s: src/kill/kill.c.s
+.PHONY : src/kill/kill.s
+
+# target to generate assembly for a file
+src/kill/kill.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/judge_include.dir/build.make CMakeFiles/judge_include.dir/src/kill/kill.c.s
+.PHONY : src/kill/kill.c.s
+
 src/main.o: src/main.c.o
 .PHONY : src/main.o
 
@@ -286,6 +334,54 @@ src/main.c.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/judge_core.dir/build.make CMakeFiles/judge_core.dir/src/main.c.s
 .PHONY : src/main.c.s
 
+src/seccomp/seccomp_handler.o: src/seccomp/seccomp_handler.c.o
+.PHONY : src/seccomp/seccomp_handler.o
+
+# target to build an object file
+src/seccomp/seccomp_handler.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/judge_include.dir/build.make CMakeFiles/judge_include.dir/src/seccomp/seccomp_handler.c.o
+.PHONY : src/seccomp/seccomp_handler.c.o
+
+src/seccomp/seccomp_handler.i: src/seccomp/seccomp_handler.c.i
+.PHONY : src/seccomp/seccomp_handler.i
+
+# target to preprocess a source file
+src/seccomp/seccomp_handler.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/judge_include.dir/build.make CMakeFiles/judge_include.dir/src/seccomp/seccomp_handler.c.i
+.PHONY : src/seccomp/seccomp_handler.c.i
+
+src/seccomp/seccomp_handler.s: src/seccomp/seccomp_handler.c.s
+.PHONY : src/seccomp/seccomp_handler.s
+
+# target to generate assembly for a file
+src/seccomp/seccomp_handler.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/judge_include.dir/build.make CMakeFiles/judge_include.dir/src/seccomp/seccomp_handler.c.s
+.PHONY : src/seccomp/seccomp_handler.c.s
+
+src/thread/thread_handler.o: src/thread/thread_handler.c.o
+.PHONY : src/thread/thread_handler.o
+
+# target to build an object file
+src/thread/thread_handler.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/judge_include.dir/build.make CMakeFiles/judge_include.dir/src/thread/thread_handler.c.o
+.PHONY : src/thread/thread_handler.c.o
+
+src/thread/thread_handler.i: src/thread/thread_handler.c.i
+.PHONY : src/thread/thread_handler.i
+
+# target to preprocess a source file
+src/thread/thread_handler.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/judge_include.dir/build.make CMakeFiles/judge_include.dir/src/thread/thread_handler.c.i
+.PHONY : src/thread/thread_handler.c.i
+
+src/thread/thread_handler.s: src/thread/thread_handler.c.s
+.PHONY : src/thread/thread_handler.s
+
+# target to generate assembly for a file
+src/thread/thread_handler.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/judge_include.dir/build.make CMakeFiles/judge_include.dir/src/thread/thread_handler.c.s
+.PHONY : src/thread/thread_handler.c.s
+
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
@@ -305,15 +401,27 @@ help:
 	@echo "... src/data/result.o"
 	@echo "... src/data/result.i"
 	@echo "... src/data/result.s"
+	@echo "... src/execute/execute_handler.o"
+	@echo "... src/execute/execute_handler.i"
+	@echo "... src/execute/execute_handler.s"
 	@echo "... src/exit/exit_handler.o"
 	@echo "... src/exit/exit_handler.i"
 	@echo "... src/exit/exit_handler.s"
 	@echo "... src/include/argtable3.o"
 	@echo "... src/include/argtable3.i"
 	@echo "... src/include/argtable3.s"
+	@echo "... src/kill/kill.o"
+	@echo "... src/kill/kill.i"
+	@echo "... src/kill/kill.s"
 	@echo "... src/main.o"
 	@echo "... src/main.i"
 	@echo "... src/main.s"
+	@echo "... src/seccomp/seccomp_handler.o"
+	@echo "... src/seccomp/seccomp_handler.i"
+	@echo "... src/seccomp/seccomp_handler.s"
+	@echo "... src/thread/thread_handler.o"
+	@echo "... src/thread/thread_handler.i"
+	@echo "... src/thread/thread_handler.s"
 .PHONY : help
 
 

@@ -1,12 +1,13 @@
 //
 // Created by ShawnGao on 2022/7/31.
 //
+#include "stdio.h"
 #include "config.h"
 
 void init_config(struct config *_config) {
     _config->max_cpu_time = 1000;
     _config->max_real_time = 1000;
-    _config->max_memory_size = 1024 * 1024;
+    _config->max_memory_size = 1024 * 1024 * 1024;
     _config->max_stack_size = 16777216;
     _config->max_process_amount = 1;
     _config->max_output_size = 1024;
