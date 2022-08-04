@@ -334,6 +334,30 @@ src/main.c.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/judge_core.dir/build.make CMakeFiles/judge_core.dir/src/main.c.s
 .PHONY : src/main.c.s
 
+src/plugin/plugin_handler.o: src/plugin/plugin_handler.c.o
+.PHONY : src/plugin/plugin_handler.o
+
+# target to build an object file
+src/plugin/plugin_handler.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/judge_include.dir/build.make CMakeFiles/judge_include.dir/src/plugin/plugin_handler.c.o
+.PHONY : src/plugin/plugin_handler.c.o
+
+src/plugin/plugin_handler.i: src/plugin/plugin_handler.c.i
+.PHONY : src/plugin/plugin_handler.i
+
+# target to preprocess a source file
+src/plugin/plugin_handler.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/judge_include.dir/build.make CMakeFiles/judge_include.dir/src/plugin/plugin_handler.c.i
+.PHONY : src/plugin/plugin_handler.c.i
+
+src/plugin/plugin_handler.s: src/plugin/plugin_handler.c.s
+.PHONY : src/plugin/plugin_handler.s
+
+# target to generate assembly for a file
+src/plugin/plugin_handler.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/judge_include.dir/build.make CMakeFiles/judge_include.dir/src/plugin/plugin_handler.c.s
+.PHONY : src/plugin/plugin_handler.c.s
+
 src/seccomp/seccomp_handler.o: src/seccomp/seccomp_handler.c.o
 .PHONY : src/seccomp/seccomp_handler.o
 
@@ -416,6 +440,9 @@ help:
 	@echo "... src/main.o"
 	@echo "... src/main.i"
 	@echo "... src/main.s"
+	@echo "... src/plugin/plugin_handler.o"
+	@echo "... src/plugin/plugin_handler.i"
+	@echo "... src/plugin/plugin_handler.s"
 	@echo "... src/seccomp/seccomp_handler.o"
 	@echo "... src/seccomp/seccomp_handler.i"
 	@echo "... src/seccomp/seccomp_handler.s"

@@ -15,6 +15,7 @@ set(CMAKE_DEPENDS_DEPENDENCY_FILES
   "/tmp/tmp.CXdDzTaTx4/src/exit/exit_handler.c" "CMakeFiles/judge_include.dir/src/exit/exit_handler.c.o" "gcc" "CMakeFiles/judge_include.dir/src/exit/exit_handler.c.o.d"
   "/tmp/tmp.CXdDzTaTx4/src/include/argtable3.c" "CMakeFiles/judge_include.dir/src/include/argtable3.c.o" "gcc" "CMakeFiles/judge_include.dir/src/include/argtable3.c.o.d"
   "/tmp/tmp.CXdDzTaTx4/src/kill/kill.c" "CMakeFiles/judge_include.dir/src/kill/kill.c.o" "gcc" "CMakeFiles/judge_include.dir/src/kill/kill.c.o.d"
+  "/tmp/tmp.CXdDzTaTx4/src/plugin/plugin_handler.c" "CMakeFiles/judge_include.dir/src/plugin/plugin_handler.c.o" "gcc" "CMakeFiles/judge_include.dir/src/plugin/plugin_handler.c.o.d"
   "/tmp/tmp.CXdDzTaTx4/src/seccomp/seccomp_handler.c" "CMakeFiles/judge_include.dir/src/seccomp/seccomp_handler.c.o" "gcc" "CMakeFiles/judge_include.dir/src/seccomp/seccomp_handler.c.o.d"
   "/tmp/tmp.CXdDzTaTx4/src/thread/thread_handler.c" "CMakeFiles/judge_include.dir/src/thread/thread_handler.c.o" "gcc" "CMakeFiles/judge_include.dir/src/thread/thread_handler.c.o.d"
   )

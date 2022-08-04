@@ -13,6 +13,8 @@ file(REMOVE_RECURSE
   "CMakeFiles/judge_include.dir/src/include/argtable3.c.o.d"
   "CMakeFiles/judge_include.dir/src/kill/kill.c.o"
   "CMakeFiles/judge_include.dir/src/kill/kill.c.o.d"
+  "CMakeFiles/judge_include.dir/src/plugin/plugin_handler.c.o"
+  "CMakeFiles/judge_include.dir/src/plugin/plugin_handler.c.o.d"
   "CMakeFiles/judge_include.dir/src/seccomp/seccomp_handler.c.o"
   "CMakeFiles/judge_include.dir/src/seccomp/seccomp_handler.c.o.d"
   "CMakeFiles/judge_include.dir/src/thread/thread_handler.c.o"

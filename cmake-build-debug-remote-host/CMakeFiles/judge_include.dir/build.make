@@ -195,6 +195,20 @@ CMakeFiles/judge_include.dir/src/seccomp/seccomp_handler.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/judge_include.dir/src/seccomp/seccomp_handler.c.s"
 	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /tmp/tmp.CXdDzTaTx4/src/seccomp/seccomp_handler.c -o CMakeFiles/judge_include.dir/src/seccomp/seccomp_handler.c.s
 
+CMakeFiles/judge_include.dir/src/plugin/plugin_handler.c.o: CMakeFiles/judge_include.dir/flags.make
+CMakeFiles/judge_include.dir/src/plugin/plugin_handler.c.o: ../src/plugin/plugin_handler.c
+CMakeFiles/judge_include.dir/src/plugin/plugin_handler.c.o: CMakeFiles/judge_include.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/tmp/tmp.CXdDzTaTx4/cmake-build-debug-remote-host/CMakeFiles --progress-num=$(CMAKE_PROGRESS_10) "Building C object CMakeFiles/judge_include.dir/src/plugin/plugin_handler.c.o"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/judge_include.dir/src/plugin/plugin_handler.c.o -MF CMakeFiles/judge_include.dir/src/plugin/plugin_handler.c.o.d -o CMakeFiles/judge_include.dir/src/plugin/plugin_handler.c.o -c /tmp/tmp.CXdDzTaTx4/src/plugin/plugin_handler.c
+
+CMakeFiles/judge_include.dir/src/plugin/plugin_handler.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/judge_include.dir/src/plugin/plugin_handler.c.i"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /tmp/tmp.CXdDzTaTx4/src/plugin/plugin_handler.c > CMakeFiles/judge_include.dir/src/plugin/plugin_handler.c.i
+
+CMakeFiles/judge_include.dir/src/plugin/plugin_handler.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/judge_include.dir/src/plugin/plugin_handler.c.s"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /tmp/tmp.CXdDzTaTx4/src/plugin/plugin_handler.c -o CMakeFiles/judge_include.dir/src/plugin/plugin_handler.c.s
+
 # Object files for target judge_include
 judge_include_OBJECTS = \
 "CMakeFiles/judge_include.dir/src/include/argtable3.c.o" \
@@ -205,7 +219,8 @@ judge_include_OBJECTS = \
 "CMakeFiles/judge_include.dir/src/execute/execute_handler.c.o" \
 "CMakeFiles/judge_include.dir/src/thread/thread_handler.c.o" \
 "CMakeFiles/judge_include.dir/src/kill/kill.c.o" \
-"CMakeFiles/judge_include.dir/src/seccomp/seccomp_handler.c.o"
+"CMakeFiles/judge_include.dir/src/seccomp/seccomp_handler.c.o" \
+"CMakeFiles/judge_include.dir/src/plugin/plugin_handler.c.o"
 
 # External object files for target judge_include
 judge_include_EXTERNAL_OBJECTS =
@@ -219,9 +234,10 @@ libjudge_include.a: CMakeFiles/judge_include.dir/src/execute/execute_handler.c.o
 libjudge_include.a: CMakeFiles/judge_include.dir/src/thread/thread_handler.c.o
 libjudge_include.a: CMakeFiles/judge_include.dir/src/kill/kill.c.o
 libjudge_include.a: CMakeFiles/judge_include.dir/src/seccomp/seccomp_handler.c.o
+libjudge_include.a: CMakeFiles/judge_include.dir/src/plugin/plugin_handler.c.o
 libjudge_include.a: CMakeFiles/judge_include.dir/build.make
 libjudge_include.a: CMakeFiles/judge_include.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/tmp/tmp.CXdDzTaTx4/cmake-build-debug-remote-host/CMakeFiles --progress-num=$(CMAKE_PROGRESS_10) "Linking C static library libjudge_include.a"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/tmp/tmp.CXdDzTaTx4/cmake-build-debug-remote-host/CMakeFiles --progress-num=$(CMAKE_PROGRESS_11) "Linking C static library libjudge_include.a"
 	$(CMAKE_COMMAND) -P CMakeFiles/judge_include.dir/cmake_clean_target.cmake
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/judge_include.dir/link.txt --verbose=$(VERBOSE)
 

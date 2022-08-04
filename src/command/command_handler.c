@@ -7,6 +7,7 @@
 #include "../data/config.h"
 #include "command_args.h"
 #include "../exit/exit_handler.h"
+#include "../plugin/plugin_handler.h"
 
 void set_config_int_value(int *key, int value) {
     if (value < 1) {
@@ -35,19 +36,14 @@ void command_args_handler(void *arg_table, char program_name[], struct config *_
     if (_args->help->count > 0) {
         printf("Usage: %s\n", program_name);
         arg_print_syntax(stdout, arg_table, "\n\n");
-        arg_print_glossary(stdout, arg_table, " %-35s %s\n");
+        arg_print_glossary(stdout, arg_table, " %-40s %s\n");
         normal_exit();
     }
-    if (_args->seccomp_rule->count > 0) {
-        if (strcmp(_args->seccomp_rule->sval[0], "?") == 0) {
-            printf("Seccomp rule list: \n");
-            printf("%s \t\t\t\t %s\n", "sys", "Deny system call and thread operating.(This is a general rule.)(Except: execve)");
-            printf("%s \t\t %s\n", "c_or_cpp_white_rule", "System calls allowed in C/C++.");
-            normal_exit();
-        }
-    } else {
-        _config->seccomp_rule_name = "sys";
+    if (_args->seccomp_rule->count <= 0) {
+        printf("Please specify the filename of the seccomp plugin.\n");
+        exception_exit(WRONG_CONFIG_VALUE);
     }
+    _config->seccomp_rule_name = (char *) _args->seccomp_rule->sval[0];
     if (_args->version->count > 0) {
         printf("Judge core version: 0.1\n");
         normal_exit();
