@@ -9,7 +9,7 @@
 
 <p align="center">
   <a href="https://github.com/ftpmsgx/judge-core">
-    <img src="images/cover.png" alt="Logo" width="500">
+    <img src="./images/cover.png" alt="Logo" width="500">
   </a>
 
   <h3 align="center">简单的判题核心</h3>
@@ -144,4 +144,4 @@ judge-core/ #主目录
 
 在此特别鸣谢 JetBrains 为开源和教育学习提供的免费 CLion 授权
 
-<img src="images/jetbrains-variant-3.png" alt="Logo" width="200">
+<img src="./images/jetbrains-variant-3.png" alt="Logo" width="200">
