@@ -30,7 +30,8 @@ int main(int argc, char *argv[]) {
             command_args_list.err_path = arg_strn(NULL, "err-path", STR_PLACE, 0, 1, "Set error output path."),
             command_args_list.args = arg_strn(NULL, "args", STR_PLACE, 0, 255, "Set parameters. (Amount: 0 ~ 255)"),
             command_args_list.env = arg_strn(NULL, "env", STR_PLACE, 0, 255, "Set env. (Amount: 0 ~ 255)"),
-            command_args_list.seccomp_rule = arg_strn(NULL, "seccomp", "<plugin file name (*.so)>", 0, 1, "Set seccomp rule name."),
+            command_args_list.seccomp_rule = arg_strn(NULL, "seccomp", "<Rule file name (*.so)>", 0, 1, "Set seccomp rule name."),
+            command_args_list.seccomp_mode = arg_strn(NULL, "seccomp-mode", "<allow | deny>", 0, 1, "Set seccomp rule init mode (SCMP_ACT_ALLOW or SCMP_ACT_KILL)."),
 
             command_args_list.end = arg_end(20)
     };

@@ -3,30 +3,31 @@
 //
 #include "stdio.h"
 #include "dlfcn.h"
-#include "string.h"
+#include "seccomp.h"
+#include "../data/config.h"
 #include "plugin_handler.h"
 
 void *out_lib;
-int (*on_enable)(char *exec);
+int (*on_enable)(struct config *c, scmp_filter_ctx *context);
 char *error_message;
 
-int plugin_handler(char *argv, char *exec) {
-    printf("Plugin is loading...\n");
-    out_lib = dlopen(argv, RTLD_LAZY);
+int plugin_handler(struct config *_c, scmp_filter_ctx *context) {
+    printf("Rule is loading...\n");
+    out_lib = dlopen(_c->seccomp_rule_name, RTLD_LAZY);
     error_message = dlerror();
 
     if (error_message) {
-        printf("Plugin load failed.\n");
+        printf("Rule load failed.\n");
         printf("%s\n", error_message);
-        return -101;
+        return 0;
     }
     *(void **)(&on_enable) = dlsym(out_lib, "on_enable");
     error_message = dlerror();
 
     if (error_message) {
-        printf("Plugin enable failed.\n");
+        printf("Rule enable failed.\n");
         printf("%s\n", error_message);
-        return -102;
+        return 0;
     }
-    return on_enable(exec);
+    return on_enable(_c, context);
 }

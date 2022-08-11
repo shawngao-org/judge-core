@@ -15,7 +15,9 @@ enum {
     EXECVE_FAILED = -7,
     CAN_NOT_CREATE_THREAD = -8,
     WAIT_FAILED = -9,
-    SET_SECCOMP_FAILED = -10
+    SET_SECCOMP_FAILED = -10,
+    LOAD_SECCOMP_FAILED = -11,
+    INIT_SECCOMP_FAILED = -12
 };
 
 void normal_exit();

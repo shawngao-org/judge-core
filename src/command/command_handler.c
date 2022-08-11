@@ -7,7 +7,6 @@
 #include "../data/config.h"
 #include "command_args.h"
 #include "../exit/exit_handler.h"
-#include "../plugin/plugin_handler.h"
 
 void set_config_int_value(int *key, int value) {
     if (value < 1) {
@@ -39,15 +38,16 @@ void command_args_handler(void *arg_table, char program_name[], struct config *_
         arg_print_glossary(stdout, arg_table, " %-40s %s\n");
         normal_exit();
     }
-    if (_args->seccomp_rule->count <= 0) {
-        printf("Please specify the filename of the seccomp plugin.\n");
-        exception_exit(WRONG_CONFIG_VALUE);
-    }
-    _config->seccomp_rule_name = (char *) _args->seccomp_rule->sval[0];
     if (_args->version->count > 0) {
         printf("Judge core version: 0.1\n");
         normal_exit();
     }
+    if (_args->seccomp_rule->count <= 0 || _args->seccomp_mode->count <= 0) {
+        printf("Please specify the filename or mode of the seccomp rule.\n");
+        exception_exit(WRONG_CONFIG_VALUE);
+    }
+    _config->seccomp_rule_name = (char *) _args->seccomp_rule->sval[0];
+    _config->seccomp_rule_mode = (char *) _args->seccomp_mode->sval[0];
     if (_args->max_cpu_time->count > 0) {
         set_config_int_value(&_config->max_cpu_time, _args->max_cpu_time->ival[0]);
     }

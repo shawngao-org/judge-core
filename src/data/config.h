@@ -19,6 +19,7 @@ struct config {
     char *args[255];
     char *env[255];
     char *seccomp_rule_name;
+    char *seccomp_rule_mode;
 };
 
 void init_config(struct config *_config);

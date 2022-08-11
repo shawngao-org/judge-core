@@ -15,4 +15,5 @@ void init_config(struct config *_config) {
     _config->output_path = "/dev/stdout";
     _config->error_path = "/dev/stderr";
     _config->seccomp_rule_name = NULL;
+    _config->seccomp_rule_mode = NULL;
 }
