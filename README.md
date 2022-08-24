@@ -4,7 +4,7 @@
 
 一个简单的判题核心，核心的Seccomp规则可以通过插件的形式载入。（文档写的比较摆烂，凑合看吧）
 <br />
-***注：这是一个未经过一系列测试的预览版。***
+***注：这是一个未经过测试的预览版。***
 <br />
 [![State-of-the-art Shitcode](https://img.shields.io/static/v1?label=State-of-the-art&message=Shitcode&color=7B5804)](https://github.com/trekhleb/state-of-the-art-shitcode)
 <br />
