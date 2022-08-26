@@ -13,6 +13,6 @@
  * @param _config 配置信息
  * @param _args 命令参数结构体
  */
-void command_args_handler(void *arg_table, char program_name[], struct config *_config, struct command_args *_args);
+void command_args_handler(void *arg_table, char program_name[], struct config *_config, const struct command_args *_args);
 
 #endif //JUDGE_CORE_COMMAND_HANDLER_H

@@ -9,20 +9,16 @@
 [![State-of-the-art Shitcode](https://img.shields.io/static/v1?label=State-of-the-art&message=Shitcode&color=7B5804)](https://github.com/trekhleb/state-of-the-art-shitcode)
 <br />
 
-<p align="center">
   <a href="https://github.com/ftpmsgx/judge-core">
-    <img src="./images/cover.png" alt="Logo" width="500">
+    <img src="./images/cover.png" alt="Logo" style="width: 500px"/>
   </a>
-
-  <h3 align="center">简单的判题核心</h3>
-  <p align="center">
+  <h3 style="text-align: center">简单的判题核心</h3>
+  <p style="text-align: center">
     <br />
     <a href="https://github.com/ftpmsgx/judge-core/issues">报告Bug</a>
     ·
     <a href="https://github.com/ftpmsgx/judge-core/issues">提出新特性</a>
   </p>
-
-</p>
 
 ### 上手指南
 
@@ -245,4 +241,4 @@ int on_enable(struct config *_c, scmp_filter_ctx *ctx) {
 
 在此特别鸣谢 JetBrains 为开源和教育学习提供的免费 CLion 授权
 
-<img src="./images/jetbrains-variant-3.png" alt="Logo" width="200">
+<img src="./images/jetbrains-variant-3.png" alt="Logo" style="width: 200px"/>
