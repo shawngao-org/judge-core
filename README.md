@@ -138,14 +138,14 @@ struct config {
     long max_stack_size;
     int max_process_amount;
     long max_output_size;
-    char *execute_path;
-    char *input_path;
-    char *output_path;
-    char *error_path;
-    char *args[255];
-    char *env[255];
-    char *seccomp_rule_name;
-    char *seccomp_rule_mode;
+    const char *execute_path;
+    const char *input_path;
+    const char *output_path;
+    const char *error_path;
+    const char *args[255];
+    const char *env[255];
+    const char *seccomp_rule_name;
+    const char *seccomp_rule_mode;
 };
 
 // 插件起点函数
