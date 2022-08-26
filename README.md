@@ -12,6 +12,8 @@
 [![Code Smells](https://sq.shawngao.org/api/project_badges/measure?project=judge-core&metric=code_smells)](https://sq.shawngao.org/dashboard?id=judge-core)
 [![Coverage](https://sq.shawngao.org/api/project_badges/measure?project=judge-core&metric=coverage)](https://sq.shawngao.org/dashboard?id=judge-core)
 [![Quality Gate Status](https://sq.shawngao.org/api/project_badges/measure?project=judge-core&metric=alert_status)](https://sq.shawngao.org/dashboard?id=judge-core)
+[![Reliability Rating](https://sq.shawngao.org/api/project_badges/measure?project=judge-core&metric=reliability_rating)](https://sq.shawngao.org/dashboard?id=judge-core)
+[![Security Rating](https://sq.shawngao.org/api/project_badges/measure?project=judge-core&metric=security_rating)](https://sq.shawngao.org/dashboard?id=judge-core)
 <br />
 
 <p align="center">
