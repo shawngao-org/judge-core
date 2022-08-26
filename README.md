@@ -9,15 +9,17 @@
 [![State-of-the-art Shitcode](https://img.shields.io/static/v1?label=State-of-the-art&message=Shitcode&color=7B5804)](https://github.com/trekhleb/state-of-the-art-shitcode)
 <br />
 
-<a href="https://github.com/ftpmsgx/judge-core">
-  <img src="./images/cover.png" alt="Logo" width="500"/>
-</a>
+<p align="center">
+  <a href="https://git.shawngao.org/ShawnGao/judge-core">
+    <img src="./images/cover.png" alt="Logo" width="500"/>
+  </a>
+</p>
 <h3 align="center">简单的判题核心</h3>
 <p align="center">
   <br />
-  <a href="https://github.com/ftpmsgx/judge-core/issues">报告Bug</a>
+  <a href="https://git.shawngao.org/ShawnGao/judge-core/issues">报告Bug</a>
   ·
-  <a href="https://github.com/ftpmsgx/judge-core/issues">提出新特性</a>
+  <a href="https://git.shawngao.org/ShawnGao/judge-core/issues">提出新特性</a>
 </p>
 
 ### 上手指南
