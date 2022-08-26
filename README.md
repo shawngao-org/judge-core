@@ -8,6 +8,11 @@
 <br />
 [![State-of-the-art Shitcode](https://img.shields.io/static/v1?label=State-of-the-art&message=Shitcode&color=7B5804)](https://github.com/trekhleb/state-of-the-art-shitcode)
 <br />
+[![Bugs](https://sq.shawngao.org/api/project_badges/measure?project=judge-core&metric=bugs)](https://sq.shawngao.org/dashboard?id=judge-core)
+[![Code Smells](https://sq.shawngao.org/api/project_badges/measure?project=judge-core&metric=code_smells)](https://sq.shawngao.org/dashboard?id=judge-core)
+[![Coverage](https://sq.shawngao.org/api/project_badges/measure?project=judge-core&metric=coverage)](https://sq.shawngao.org/dashboard?id=judge-core)
+[![Quality Gate Status](https://sq.shawngao.org/api/project_badges/measure?project=judge-core&metric=alert_status)](https://sq.shawngao.org/dashboard?id=judge-core)
+<br />
 
 <p align="center">
   <a href="https://git.shawngao.org/ShawnGao/judge-core">
