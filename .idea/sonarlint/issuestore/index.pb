@@ -19,14 +19,10 @@ I
 src/execute/answer_code.h,f\e\fed81aff18448bc579803b8ba3d8debf8c575633
 G
 src/exit/exit_handler.c,a\7\a7590445ca3ada848fba21cdc2a853fd59755d82
-G
-src/exit/exit_handler.h,2\d\2dc5016ac4ae0e48839fbb4c1478a0e44f542cc4
 ?
 src/kill/kill.h,d\8\d874ab89da44a970036220fc69939517507d0db9
 J
 src/command/command_args.h,e\9\e9147969921c04533ce8d7c07a056e343bdaf569
-K
-src/thread/thread_handler.c,7\b\7b48c6e2676678b5ab45d4816adde60a9d6e57ea
 K
 src/plugin/plugin_handler.c,6\a\6a0d80b808d93729c7df6d13ed3daea9b1da86ff
 M
