@@ -1,4 +1,0 @@
-/tmp/tmp.CXdDzTaTx4/cmake-build-debug-remote-host/CMakeFiles/judge_core.dir
-/tmp/tmp.CXdDzTaTx4/cmake-build-debug-remote-host/CMakeFiles/judge_include.dir
-/tmp/tmp.CXdDzTaTx4/cmake-build-debug-remote-host/CMakeFiles/edit_cache.dir
-/tmp/tmp.CXdDzTaTx4/cmake-build-debug-remote-host/CMakeFiles/rebuild_cache.dir

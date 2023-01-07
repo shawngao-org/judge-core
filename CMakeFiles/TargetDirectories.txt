@@ -1,0 +1,4 @@
+/mnt/d/judge-project/last/judge-core/CMakeFiles/judge_core.dir
+/mnt/d/judge-project/last/judge-core/CMakeFiles/judge_include.dir
+/mnt/d/judge-project/last/judge-core/CMakeFiles/edit_cache.dir
+/mnt/d/judge-project/last/judge-core/CMakeFiles/rebuild_cache.dir

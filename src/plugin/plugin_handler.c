@@ -8,10 +8,10 @@
 #include "plugin_handler.h"
 
 void *out_lib;
-int (*on_enable)(struct config *c, scmp_filter_ctx *context);
+scmp_filter_ctx (*on_enable)(struct config *c);
 char *error_message;
 
-int plugin_handler(struct config *_c, scmp_filter_ctx *context) {
+scmp_filter_ctx plugin_handler(struct config *_c) {
     printf("Rule is loading...\n");
     out_lib = dlopen(_c->seccomp_rule_name, RTLD_LAZY);
     error_message = dlerror();
@@ -29,5 +29,7 @@ int plugin_handler(struct config *_c, scmp_filter_ctx *context) {
         printf("%s\n", error_message);
         return 0;
     }
-    return on_enable(_c, context);
+    scmp_filter_ctx context = on_enable(_c);
+    dlclose(out_lib);
+    return context;
 }

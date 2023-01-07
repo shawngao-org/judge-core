@@ -7,6 +7,6 @@
 #include "seccomp.h"
 #include "../data/config.h"
 
-int plugin_handler(struct config *_c, scmp_filter_ctx *context);
+scmp_filter_ctx plugin_handler(struct config *_c);
 
 #endif //JUDGE_CORE_PLUGIN_HANDLER_H

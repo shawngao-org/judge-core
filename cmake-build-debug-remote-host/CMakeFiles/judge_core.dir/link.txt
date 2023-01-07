@@ -1,1 +1,0 @@
-/usr/bin/cc   --coverage -g CMakeFiles/judge_core.dir/src/main.c.o -o judge_core  -lm -lseccomp libjudge_include.a -lm -lseccomp 

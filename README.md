@@ -108,7 +108,6 @@ judge-core/ #主目录
  --args=<string value>               设置运行的二进制文件的命令行参数, 数量, 0~255个, 例如: -a
  --env=<string value>                设置相应的环境变量, 数量: 0~255个, 例如: PATH=/bin
  --seccomp=<plugin file name (*.so)> 设置Seccomp规则插件位置, 例如: /home/ubuntu/plugin.so
- --seccomp-mode=<allow | deny>       设置Seccomp规则的初始化模式 ((SCMP_ACT_ALLOW | SCMP_ACT_KILL)
 ```
 
 ### 关于插件
@@ -126,13 +125,11 @@ judge-core/ #主目录
 ```c
 // 插件主要用于Seccomp规则的自定义 (例子)
 // 该代码是一个通用的规则。
-// 注: 规则设定失败的返回值不允许为0。
 #include "stdio.h"
-#include "stdlib.h"
-#include "sys/syscall.h"
 #include "seccomp.h"
-#include "string.h"
 #include "fcntl.h"
+#include "errno.h"
+#include "syscall.h"
 
 /**
  * 存放配置的结构体，可以直接使用这里面的数据。
@@ -152,15 +149,19 @@ struct config {
     const char *args[255];
     const char *env[255];
     const char *seccomp_rule_name;
-    const char *seccomp_rule_mode;
 };
 
 // 插件起点函数
 // *_c: 配置数据, 内容见struct config
-// *ctx: 已经初始化过的seccomp过滤器上下文 (规则设定好之后会自动被加载, 不需要写seccomp_load)
-int on_enable(struct config *_c, scmp_filter_ctx *ctx) {
+// (规则设定好之后会自动被加载, 不需要写seccomp_load)
+scmp_filter_ctx on_enable(struct config *_c) {
     // 提示, 可有可无
     printf("Rule was loaded.\n");
+    scmp_filter_ctx ctx = NULL;
+    ctx = seccomp_init(SCMP_ACT_ALLOW);
+    if (!ctx) {
+        return NULL;
+    }
     // 黑名单 (本插件例子使用allow模式, deny模式请自行更改)
     int _blacklist[] = {SYS_clone, SYS_execveat, SYS_fork, SYS_kill, SYS_vfork};
     // 计算黑名单元素的个数
@@ -168,46 +169,53 @@ int on_enable(struct config *_c, scmp_filter_ctx *ctx) {
     // 循环添加规则
     for (int i = 0; i < _blacklist_length; i++) {
         if (seccomp_rule_add(ctx, SCMP_ACT_KILL, _blacklist[i], 0)) {
-            return 10;
+            return NULL;
         }
+    }
+    // 阻止操作socket
+    if (seccomp_rule_add(ctx, SCMP_ACT_ERRNO(EACCES), SCMP_SYS(socket), 0) != 0) {
+        return NULL;
     }
     // 这段比较重要, 因为这个涉及到了是否能正常执行“execute_path”指定的程序。
     // seccomp_rule_add(ctx, SCMP_ACT_KILL, SYS_execve, 1, SCMP_A0(SCMP_CMP_NE, (scmp_datum_t)(_c->execute_path)))
     // SCMP_ACT_KILL: 如果进行对应的系统调用，则会把进程杀死
     // SYS_execve: 对应execve等函数
     // 1: 处理的系统调用参数个数
-    // SCMP_A0(SCMP_CMP_NE, (scmp_datum_t)(_c->execute_path)): 
-    //     SCMP_A0(SCMP_CMP_NE, (scmp_datum_t)(_c->execute_path)): 
+    // SCMP_A0(SCMP_CMP_NE, (scmp_datum_t)(_c->execute_path)):
+    //     SCMP_A0(SCMP_CMP_NE, (scmp_datum_t)(_c->execute_path)):
     //         SCMP_CMP_NE: 当参数值不等于(scmp_datum_t)(_c->execute_path)的时候
     // seccomp_rule_add返回0为成功
     // 简述: 当调用execve系统调用的时候, 如果参数不等于_c->execute_path, 则进行拦截, 并进行SCMP_ACT_KILL处理。
-    // SCMP_CMP()和SCMP_A{0-5}()的有效操作数: 
+    // SCMP_CMP()和SCMP_A{0-5}()的有效操作数:
     //     不等于 (SCMP_CMP_NE)、小于 (SCMP_CMP_LT)、小于等于 (SCMP_CMP_LE)、等于 (SCMP_CMP_EQ)、大于等于 (SCMP_CMP_GE)、大于 (SCMP_CMP_GT)、掩码参数等于基准值掩码 (SCMP_CMP_MASKED_EQ)
     if (seccomp_rule_add(ctx, SCMP_ACT_KILL, SYS_execve, 1, SCMP_A0(SCMP_CMP_NE, (scmp_datum_t)(_c->execute_path)))) {
-        return 10;
+        return NULL;
     }
-
     if (seccomp_rule_add(ctx, SCMP_ACT_KILL, SYS_open, 1, SCMP_CMP(1, SCMP_CMP_MASKED_EQ, O_WRONLY, O_WRONLY))) {
-        return 10;
+        return NULL;
     }
     if (seccomp_rule_add(ctx, SCMP_ACT_KILL, SYS_open, 1, SCMP_CMP(1, SCMP_CMP_MASKED_EQ, O_RDWR, O_RDWR))) {
-        return 10;
+        return NULL;
     }
     if (seccomp_rule_add(ctx, SCMP_ACT_KILL, SYS_openat, 1, SCMP_CMP(2, SCMP_CMP_MASKED_EQ, O_WRONLY, O_WRONLY))) {
-        return 10;
+        return NULL;
     }
     if (seccomp_rule_add(ctx, SCMP_ACT_KILL, SYS_openat, 1, SCMP_CMP(2, SCMP_CMP_MASKED_EQ, O_RDWR, O_RDWR))) {
-        return 10;
+        return NULL;
     }
-    // 规则设置成功的返回值必须为0
-    return 0;
+    // 返回规则上下文
+    return ctx;
 }
 ```
   3. 编译：
-    ```sh
-    gcc -c -fpic <源文件> -lseccomp
-    gcc -shared -lc -lseccomp -o <文件名.so> <生成的.o文件>
-    ```
+
+```shell
+gcc -c -fpic <源文件> -lseccomp
+gcc -shared -lc -lseccomp -o <文件名.so> <生成的.o文件>
+```
+
+
+
   4. 在运行核心的时候只需要指定“--seccomp=”参数的值就可以生效了 (值为你生成的.so文件的路径及文件名)
 
 ### 返回值
