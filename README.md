@@ -210,8 +210,13 @@ scmp_filter_ctx on_enable(struct config *_c) {
   3. 编译：
 
 ```shell
-gcc -c -fpic <源文件> -lseccomp
-gcc -shared -lc -lseccomp -o <文件名.so> <生成的.o文件>
+> gcc -c -fpic <源文件> -lseccomp
+> gcc -shared -lc -lseccomp -o <文件名.so> <生成的.o文件>
+
+# 也可以使用build_plugin.sh脚本进行构建
+
+> bash build_plugin.sh
+Enter your plugin resource code file name (eg. filename1): plugin_test
 ```
 
 
