@@ -34,15 +34,14 @@
 ###### 开发前的配置要求
 
 1. 开发工具: CLion 2022.1.3 (需要配置远程开发, 除非开发机器是Linux环境, 不会配置可以移步至[Google](https://www.google.com/)或者[Baidu](https://www.baidu.com/))
-2. 系统以及环境: Ubuntu Server、GCC、GNU make、cmake、libseccomp-dev、libseccomp2
+2. 系统: Ubuntu / Debian / CentOS[不推荐，且尚未测试]
+2. 环境: GCC / CMake (>= 3.22) / libseccomp2 / libseccomp-dev | (如果系统为Ubuntu或者Debian可以直接进行构建, 脚本会自动检查并安装环境)
 
 ##### **构建**
+
 在项目根目录 (CMakeLists.txt所在目录) 中执行如下命令
 ```sh
-# 生成 Makefile
-cmake .
-# 构建可执行文件
-make
+bash build.sh
 ```
 
 ### 文件目录说明
@@ -51,6 +50,7 @@ make
 judge-core/ #主目录
 ├── CMakeLists.txt
 ├── README.md
+├── build.sh
 ├── images
 │ ├── cover.png
 │ └── logo.png
