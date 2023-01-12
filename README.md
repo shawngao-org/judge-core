@@ -8,12 +8,7 @@
 <br />
 [![State-of-the-art Shitcode](https://img.shields.io/static/v1?label=State-of-the-art&message=Shitcode&color=7B5804)](https://github.com/trekhleb/state-of-the-art-shitcode)
 <br />
-[![Bugs](https://sq.shawngao.org/api/project_badges/measure?project=judge-core&metric=bugs)](https://sq.shawngao.org/dashboard?id=judge-core)
-[![Code Smells](https://sq.shawngao.org/api/project_badges/measure?project=judge-core&metric=code_smells)](https://sq.shawngao.org/dashboard?id=judge-core)
-[![Coverage](https://sq.shawngao.org/api/project_badges/measure?project=judge-core&metric=coverage)](https://sq.shawngao.org/dashboard?id=judge-core)
-[![Quality Gate Status](https://sq.shawngao.org/api/project_badges/measure?project=judge-core&metric=alert_status)](https://sq.shawngao.org/dashboard?id=judge-core)
-[![Reliability Rating](https://sq.shawngao.org/api/project_badges/measure?project=judge-core&metric=reliability_rating)](https://sq.shawngao.org/dashboard?id=judge-core)
-[![Security Rating](https://sq.shawngao.org/api/project_badges/measure?project=judge-core&metric=security_rating)](https://sq.shawngao.org/dashboard?id=judge-core)
+[![Build Status](https://jenkins.shawngao.org/buildStatus/icon?job=GiteaTeam%2Fjudge-core%2Fmain&build=3)](https://jenkins.shawngao.org/job/GiteaTeam/job/judge-core/job/main/3/)
 <br />
 
 <p align="center">
