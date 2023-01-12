@@ -30,7 +30,7 @@ function ubuntu_debian_sys() {
       sudo apt-get update
       feedback
       echo -e "\e[33mInstalling gcc..."
-      sudo apt-get install gcc
+      sudo apt-get install -y gcc
       feedback
   fi
 
@@ -41,7 +41,7 @@ function ubuntu_debian_sys() {
       sudo apt-get update
       feedback
       echo -e "\e[33mInstalling cmake..."
-      sudo apt-get install cmake
+      sudo apt-get install -y cmake
       feedback
   fi
 
@@ -52,7 +52,7 @@ function ubuntu_debian_sys() {
       sudo apt-get update
       feedback
       echo -e "\e[33mInstalling libseccomp2..."
-      sudo apt-get install libseccomp2
+      sudo apt-get install -y libseccomp2
       feedback
   fi
 
@@ -63,7 +63,7 @@ function ubuntu_debian_sys() {
       sudo apt-get update
       feedback
       echo -e "\e[33mInstalling libseccomp-dev..."
-      sudo apt-get install libseccomp-dev
+      sudo apt-get install -y libseccomp-dev
       feedback
   fi
   generate_make_file
@@ -75,7 +75,7 @@ function centos_sys() {
       echo -e "\e[32mgcc is installed."
   else
       echo -e "\e[33mInstalling gcc..."
-      sudo yum install gcc
+      sudo yum install -y gcc
       feedback
   fi
 
@@ -83,7 +83,7 @@ function centos_sys() {
       echo -e "\e[32mCMake is installed."
   else
       echo -e "\e[33mInstalling cmake..."
-      sudo yum install cmake
+      sudo yum install -y cmake
       feedback
   fi
 
@@ -91,7 +91,7 @@ function centos_sys() {
       echo -e "\e[32mlibseccomp2 is installed."
   else
       echo -e "\e[33mInstalling libseccomp2..."
-      sudo yum install libseccomp2
+      sudo yum install -y libseccomp2
       feedback
   fi
 
@@ -99,7 +99,7 @@ function centos_sys() {
       echo -e "\e[32mlibseccomp-devel is installed."
   else
       echo -e "\e[33mInstalling libseccomp-devel..."
-      sudo yum install libseccomp-devel
+      sudo yum install -y libseccomp-devel
       feedback
   fi
   generate_make_file
