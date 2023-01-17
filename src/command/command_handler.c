@@ -42,11 +42,6 @@ void command_args_handler(void *arg_table, char program_name[], struct config *_
         printf("Judge core version: 0.1.7\n");
         normal_exit();
     }
-    if (_args->seccomp_rule->count <= 0) {
-        printf("Please specify the filename or mode of the seccomp rule.\n");
-        exception_exit(WRONG_CONFIG_VALUE);
-    }
-    _config->seccomp_rule_name = _args->seccomp_rule->sval[0];
     if (_args->max_cpu_time->count > 0) {
         set_config_int_value(&_config->max_cpu_time, _args->max_cpu_time->ival[0]);
     }

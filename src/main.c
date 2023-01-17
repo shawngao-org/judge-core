@@ -48,11 +48,13 @@ int main(int argc, char *argv[]) {
     struct result _result;
     init_result(&_result);
     execute_handler(&_config, &_result);
-    printf("CPU time: %d\n", _result.cpu_time);
-    printf("Real time: %d\n", _result.real_time);
-    printf("Memory used: %ld\n", _result.memory);
-    printf("Signal code: %d\n", _result.signal_code);
-    printf("Exit code: %d\n", _result.exit_code);
-    printf("Last result: %d\n", _result.result);
+    printf("{\n");
+    printf("\t\"cpu\": %d,\n", _result.cpu_time);
+    printf("\t\"real\": %d,\n", _result.real_time);
+    printf("\t\"memory\": %ld,\n", _result.memory);
+    printf("\t\"signal\": %d,\n", _result.signal_code);
+    printf("\t\"exit\": %d,\n", _result.exit_code);
+    printf("\t\"result\": %d\n", _result.result);
+    printf("}\n");
     return 0;
 }

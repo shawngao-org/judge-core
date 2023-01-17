@@ -8,12 +8,16 @@
 #include "../plugin/plugin_handler.h"
 
 int seccomp_handler(struct config *_c) {
+    if (_c->seccomp_rule_name == NULL) {
+        return 0;
+    }
     scmp_filter_ctx ctx = plugin_handler(_c);
     if (ctx == NULL) {
         exception_exit(INIT_SECCOMP_FAILED);
     }
-    if (seccomp_load(ctx)) {
+    int res = seccomp_load(ctx);
+    if (res) {
         exception_exit(LOAD_SECCOMP_FAILED);
     }
-    return 0;
+    return res;
 }

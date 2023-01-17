@@ -21,11 +21,7 @@ G
 src/include/argtable3.c,a\e\aed48abbd52124e9ca43a70177c3c82b4342b4b5
 M
 src/command/command_handler.h,3\0\3048482b8813dc4208b68c7078e6413bf499dabe
-M
-src/command/command_handler.c,3\0\30e71bad28ece038c48f5bd3174153a1a992f7d7
-A
-src/data/config.h,4\7\47a5b87229daee98d2ebb31701b11305a681c155
-A
-src/data/config.c,b\7\b7cc8131f13da7795adf1c11d99a8bb790f34580
 A
 src/data/result.c,7\8\7889fd4145565fbdeb81497b12a5037aefbc3513
+A
+src/data/result.h,8\2\827fbeee21a3476b01d18147f5e4c48d7c2a24af
