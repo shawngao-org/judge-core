@@ -12,16 +12,13 @@
 <br />
 
 <p align="center">
-  <a href="https://git.shawngao.org/ShawnGao/judge-core">
+  <a href="#">
     <img src="./images/cover.png" alt="Logo" width="500"/>
   </a>
 </p>
 <h3 align="center">简单的判题核心</h3>
 <p align="center">
   <br />
-  <a href="https://git.shawngao.org/ShawnGao/judge-core/issues">报告Bug</a>
-  ·
-  <a href="https://git.shawngao.org/ShawnGao/judge-core/issues">提出新特性</a>
 </p>
 
 ### 上手指南
@@ -90,6 +87,7 @@ judge-core/ #主目录
 ```
  -h, --help                          显示帮助
  -v, --version                       显示版本信息
+ --unlimited-memory                  没有设置内存限制(只针对Java等代码的运行). 此选项比 --memory 具有更高的优先级
  --cpu=<int value>                   设置最大CPU时间, 单位: ms
  --real=<int value>                  设置最大真实运行时间, 单位: ms
  --memory=<int value>                设置最大使用内存, 单位: byte
