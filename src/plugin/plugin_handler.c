@@ -16,7 +16,7 @@ scmp_filter_ctx on_enable(struct config *_c) {
         return NULL;
     }
     // 黑名单 (本插件例子使用allow模式, deny模式请自行更改)
-    int _blacklist[] = {SYS_clone, SYS_execveat, SYS_fork, SYS_kill, SYS_vfork};
+    int _blacklist[] = {SYS_clone, SYS_execveat, SCMP_SYS(fork), SYS_kill, SYS_vfork};
     // 计算黑名单元素的个数
     int _blacklist_length = sizeof(_blacklist) / sizeof(int);
     // 循环添加规则
@@ -43,10 +43,10 @@ scmp_filter_ctx on_enable(struct config *_c) {
     if (seccomp_rule_add(ctx, SCMP_ACT_KILL, SYS_execve, 1, SCMP_A0(SCMP_CMP_NE, (scmp_datum_t)(_c->execute_path)))) {
         return NULL;
     }
-    if (seccomp_rule_add(ctx, SCMP_ACT_KILL, SYS_open, 1, SCMP_CMP(1, SCMP_CMP_MASKED_EQ, O_WRONLY, O_WRONLY))) {
+    if (seccomp_rule_add(ctx, SCMP_ACT_KILL, SCMP_SYS(open), 1, SCMP_CMP(1, SCMP_CMP_MASKED_EQ, O_WRONLY, O_WRONLY))) {
         return NULL;
     }
-    if (seccomp_rule_add(ctx, SCMP_ACT_KILL, SYS_open, 1, SCMP_CMP(1, SCMP_CMP_MASKED_EQ, O_RDWR, O_RDWR))) {
+    if (seccomp_rule_add(ctx, SCMP_ACT_KILL, SCMP_SYS(open), 1, SCMP_CMP(1, SCMP_CMP_MASKED_EQ, O_RDWR, O_RDWR))) {
         return NULL;
     }
     if (seccomp_rule_add(ctx, SCMP_ACT_KILL, SYS_openat, 1, SCMP_CMP(2, SCMP_CMP_MASKED_EQ, O_WRONLY, O_WRONLY))) {
