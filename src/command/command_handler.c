@@ -48,8 +48,13 @@ void command_args_handler(void *arg_table, char program_name[], struct config *_
     if (_args->max_real_time->count > 0) {
         set_config_int_value(&_config->max_real_time, _args->max_real_time->ival[0]);
     }
-    if (_args->max_memory->count > 0) {
-        set_config_long_value(&_config->max_memory_size, _args->max_memory->ival[0]);
+    if (_args->unlimited_memory->count <= 0) {
+        if (_args->max_memory->count > 0 && _args->max_memory->ival[0] >= 16777216) {
+            set_config_int_value(&_config->unlimited_memory, 0);
+            set_config_long_value(&_config->max_memory_size, _args->max_memory->ival[0]);
+        }
+    } else {
+        set_config_int_value(&_config->unlimited_memory, 1);
     }
     if (_args->max_stack->count > 0) {
         set_config_long_value(&_config->max_stack_size, _args->max_stack->ival[0]);

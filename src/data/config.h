@@ -8,6 +8,7 @@
 struct config {
     int max_cpu_time;
     int max_real_time;
+    int unlimited_memory;
     long max_memory_size;
     long max_stack_size;
     int max_process_amount;

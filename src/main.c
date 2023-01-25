@@ -15,6 +15,9 @@ int main(int argc, char *argv[]) {
     void *arg_table[] = {
             command_args_list.help = arg_litn("h", "help", 0, 1, "Display help pages"),
             command_args_list.version = arg_litn("v", "version", 0, 1, "Display version information."),
+            command_args_list.unlimited_memory = arg_litn(NULL, "unlimited-memory", 0, 1, "No memory limit set "
+                                                                                          "(Only for the operation of codes such as Java). "
+                                                                                          "This option has higher priority than --memory."),
 
             command_args_list.max_cpu_time = arg_intn(NULL, "cpu", INT_PLACE, 0, 1, "Set max CPU time (ms)"),
             command_args_list.max_real_time = arg_intn(NULL, "real", INT_PLACE, 0, 1, "Set max real time (ms)"),

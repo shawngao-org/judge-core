@@ -19,17 +19,19 @@ void check_rlimit(int code) {
 
 void set_rlimit(const struct config *_c) {
     struct rlimit cpu_time;
-    struct rlimit memory;
     struct rlimit stack;
     struct rlimit process;
     struct rlimit output;
     cpu_time.rlim_cur = cpu_time.rlim_max = _c->max_cpu_time;
-    memory.rlim_cur = memory.rlim_max = _c->max_memory_size;
     stack.rlim_cur = stack.rlim_max = _c->max_stack_size;
     process.rlim_cur = process.rlim_max = _c->max_process_amount;
     output.rlim_cur = output.rlim_max = _c->max_output_size;
+    if (!_c->unlimited_memory) {
+        struct rlimit memory;
+        memory.rlim_cur = memory.rlim_max = _c->max_memory_size;
+        check_rlimit(setrlimit(RLIMIT_AS, &memory));
+    }
     check_rlimit(setrlimit(RLIMIT_CPU, &cpu_time));
-    check_rlimit(setrlimit(RLIMIT_AS, &memory));
     check_rlimit(setrlimit(RLIMIT_STACK, &stack));
     check_rlimit(setrlimit(RLIMIT_NPROC, &process));
     check_rlimit(setrlimit(RLIMIT_FSIZE, &output));
