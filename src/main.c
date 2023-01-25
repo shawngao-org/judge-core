@@ -18,6 +18,7 @@ int main(int argc, char *argv[]) {
             command_args_list.unlimited_memory = arg_litn(NULL, "unlimited-memory", 0, 1, "No memory limit set "
                                                                                           "(Only for the operation of codes such as Java). "
                                                                                           "This option has higher priority than --memory."),
+            command_args_list.skip_seccomp = arg_litn(NULL, "skip-seccomp", 0, 1, "Skip Seccomp filter."),
 
             command_args_list.max_cpu_time = arg_intn(NULL, "cpu", INT_PLACE, 0, 1, "Set max CPU time (ms)"),
             command_args_list.max_real_time = arg_intn(NULL, "real", INT_PLACE, 0, 1, "Set max real time (ms)"),
@@ -33,7 +34,10 @@ int main(int argc, char *argv[]) {
             command_args_list.err_path = arg_strn(NULL, "err-path", STR_PLACE, 0, 1, "Set error output path."),
             command_args_list.args = arg_strn(NULL, "args", STR_PLACE, 0, 255, "Set parameters. (Amount: 0 ~ 255)"),
             command_args_list.env = arg_strn(NULL, "env", STR_PLACE, 0, 255, "Set env. (Amount: 0 ~ 255)"),
-            command_args_list.seccomp_rule = arg_strn(NULL, "seccomp", "<Rule file name (*.so)>", 0, 1, "Set seccomp rule name."),
+            command_args_list.seccomp_rule = arg_strn(NULL, "seccomp", "<Rule file name (*.so)>", 0, 1,
+                                                      "Set seccomp rule name."
+                                                      "(Deprecated, may be removed in a future release, "
+                                                      "no longer available at this stage)"),
 
             command_args_list.end = arg_end(20)
     };

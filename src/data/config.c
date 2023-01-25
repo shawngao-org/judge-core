@@ -8,6 +8,7 @@ void init_config(struct config *_config) {
     _config->max_cpu_time = 1000;
     _config->max_real_time = 1000;
     _config->unlimited_memory = 0;
+    _config->skip_seccomp = 0;
     _config->max_memory_size = 16777216;
     _config->max_stack_size = 16777216;
     _config->max_process_amount = 1;

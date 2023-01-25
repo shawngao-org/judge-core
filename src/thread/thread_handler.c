@@ -66,8 +66,10 @@ void thread_handler(struct config *_c) {
     if (!dup2_flag) {
         exception_exit(HANDLE_COPY_FAILED);
     }
-    if (seccomp_handler(_c)) {
-        exception_exit(SET_SECCOMP_FAILED);
+    if (!_c->skip_seccomp) {
+        if (seccomp_handler(_c)) {
+            exception_exit(SET_SECCOMP_FAILED);
+        }
     }
     execve(_c->execute_path, _c->args, _c->env);
     exception_exit(EXECVE_FAILED);

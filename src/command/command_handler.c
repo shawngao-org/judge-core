@@ -8,22 +8,6 @@
 #include "command_args.h"
 #include "../exit/exit_handler.h"
 
-void set_config_int_value(int *key, int value) {
-    if (value < 1) {
-        printf("\033[31mThis parameter must be greater than or equal to 1.\033[0m\n");
-        exception_exit(WRONG_CONFIG_VALUE);
-    }
-    *key = value;
-}
-
-void set_config_long_value(long *key, long value) {
-    if (value < 1) {
-        printf("\033[31mThis parameter must be greater than or equal to 1.\033[0m\n");
-        exception_exit(WRONG_CONFIG_VALUE);
-    }
-    *key = value;
-}
-
 /**
  * 命令参数处理器
  * @param arg_table 参数表
@@ -39,31 +23,36 @@ void command_args_handler(void *arg_table, char program_name[], struct config *_
         normal_exit();
     }
     if (_args->version->count > 0) {
-        printf("Judge core version: 0.1.7\n");
+        printf("Judge core version: 0.1.8\n");
         normal_exit();
     }
     if (_args->max_cpu_time->count > 0) {
-        set_config_int_value(&_config->max_cpu_time, _args->max_cpu_time->ival[0]);
+        _config->max_cpu_time = _args->max_cpu_time->ival[0];
     }
     if (_args->max_real_time->count > 0) {
-        set_config_int_value(&_config->max_real_time, _args->max_real_time->ival[0]);
+        _config->max_real_time = _args->max_real_time->ival[0];
+    }
+    if (_args->skip_seccomp->count > 0) {
+        _config->skip_seccomp = 1;
+    } else {
+        _config->skip_seccomp = 0;
     }
     if (_args->unlimited_memory->count <= 0) {
-        if (_args->max_memory->count > 0 && _args->max_memory->ival[0] >= 16777216) {
-            set_config_int_value(&_config->unlimited_memory, 0);
-            set_config_long_value(&_config->max_memory_size, _args->max_memory->ival[0]);
+        if (_args->max_memory->count > 0) {
+            _config->unlimited_memory = 0;
+            _config->max_memory_size = (long) _args->max_memory->ival[0];
         }
     } else {
-        set_config_int_value(&_config->unlimited_memory, 1);
+        _config->unlimited_memory = 1;
     }
     if (_args->max_stack->count > 0) {
-        set_config_long_value(&_config->max_stack_size, _args->max_stack->ival[0]);
+        _config->max_stack_size = (long) _args->max_stack->ival[0];
     }
     if (_args->max_process->count > 0) {
-        set_config_int_value(&_config->max_process_amount, _args->max_process->ival[0]);
+        _config->max_process_amount = _args->max_process->ival[0];
     }
     if (_args->max_output_size->count > 0) {
-        set_config_long_value(&_config->max_output_size, _args->max_output_size->ival[0]);
+        _config->max_output_size = (long) _args->max_output_size->ival[0];
     }
     if (_args->exec_path->count <= 0) {
         exception_exit(WRONG_CONFIG_VALUE);

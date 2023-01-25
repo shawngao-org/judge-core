@@ -9,6 +9,7 @@ struct config {
     int max_cpu_time;
     int max_real_time;
     int unlimited_memory;
+    int skip_seccomp;
     long max_memory_size;
     long max_stack_size;
     int max_process_amount;
