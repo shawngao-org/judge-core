@@ -16,7 +16,7 @@ scmp_filter_ctx on_enable(struct config *_c) {
         return NULL;
     }
     // 黑名单 (本插件例子使用allow模式, deny模式请自行更改)
-    int _blacklist[] = {SYS_clone, SYS_execveat, SCMP_SYS(fork), SYS_kill, SYS_vfork};
+    int _blacklist[] = {SYS_clone, SYS_execveat, SCMP_SYS(fork), SYS_kill, SCMP_SYS(vfork)};
     // 计算黑名单元素的个数
     int _blacklist_length = sizeof(_blacklist) / sizeof(int);
     // 循环添加规则
