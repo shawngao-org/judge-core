@@ -8,7 +8,7 @@
 <br />
 [![State-of-the-art Shitcode](https://img.shields.io/static/v1?label=State-of-the-art&message=Shitcode&color=7B5804)](https://github.com/trekhleb/state-of-the-art-shitcode)
 <br />
-[![Build Status](https://jenkins.shawngao.org/buildStatus/icon?job=GiteaTeam%2Fjudge-core%2Fmain&build=3)](https://jenkins.shawngao.org/job/GiteaTeam/job/judge-core/job/main/3/)
+[![pipeline status](http://gitlab.shawngao.org/root/judge-core/badges/main/pipeline.svg)](http://gitlab.shawngao.org/root/judge-core/-/commits/main) [![Latest Release](http://gitlab.shawngao.org/root/judge-core/-/badges/release.svg)](http://gitlab.shawngao.org/root/judge-core/-/releases)
 <br />
 
 <p align="center">
@@ -20,7 +20,6 @@
 <p align="center">
   <br />
 </p>
-
 ### 上手指南
 
 ###### 开发前的配置要求

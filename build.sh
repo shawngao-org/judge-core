@@ -12,13 +12,14 @@ function feedback() {
 
 function make_project() {
     echo -e "\e[33mMaking the project..."
-    make
+    cd build && make
     feedback
 }
 
 function generate_make_file() {
   echo -e "\e[33mGenerating Makefile..."
-  cmake .
+  mkdir build
+  cmake -S . -B build
   feedback
 }
 

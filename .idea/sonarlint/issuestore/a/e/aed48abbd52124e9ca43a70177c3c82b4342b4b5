@@ -1,288 +1,0 @@
-
-0c:S125"Remove the commented out code.(¨ıÏı
-0c:S125<"Remove the commented out code.(¨ıÏı
-1c:S125¬"Remove the commented out code.(¨ıÏı
->c:S5281Ä"%format string is not a string literal(—é­Ùúÿÿÿÿ
->c:S5281Í"%format string is not a string literal(—é­Ùúÿÿÿÿ
-1c:S125Ş"Remove the commented out code.(¨ıÏı
-Hc:S1135Ÿ"4Complete the task associated to this "TODO" comment.(–±Ù
-1c:S125…"Remove the commented out code.(¨ıÏı
-9c:S5281Ú"%format string is not a string literal(§äÍÑ
-Oc:S859î"<cast from 'char *const *' to 'char **' drops const qualifier(şÀ°×
-Tc:S859ğ"<cast from 'char *const *' to 'char **' drops const qualifier(•Êùıÿÿÿÿ
-1c:S125Ã"Remove the commented out code.(¨ıÏı
-Rc:S859Ì":cast from 'const char *' to 'char *' drops const qualifier(˜Å’›şÿÿÿÿ
-1c:S125ı"Remove the commented out code.(¨ıÏı
-1c:S125œ"Remove the commented out code.(¨ıÏı
-1c:S125"Remove the commented out code.(¨ıÏı
-1c:S125î"Remove the commented out code.(¨ıÏı
-1c:S125–"Remove the commented out code.(Èá·…
-1c:S125¦"Remove the commented out code.(–ò¤ã
-6c:S125ª"Remove the commented out code.(ÿã²üÿÿÿÿ
-1c:S125®"Remove the commented out code.(ÖÉ«Ë
-6c:S125°"Remove the commented out code.(åÓ¤“ùÿÿÿÿ
-1c:S125´"Remove the commented out code.(­ ò
-Mc:S859·":cast from 'const char *' to 'char *' drops const qualifier(¯Å®Ï
-1c:S125Ç"Remove the commented out code.(ô´¬À
-6c:S125Ñ"Remove the commented out code.(ª»¹éÿÿÿÿÿ
-Rc:S859ø":cast from 'const char *' to 'char *' drops const qualifier(ş¼Óçøÿÿÿÿ
-1c:S125¢"Remove the commented out code.(¼å‡
-6c:S125¨"Remove the commented out code.(¥£Êıÿÿÿÿ
-1c:S125"Remove the commented out code.(¨ıÏı
-1c:S125†"Remove the commented out code.(¨ıÏı
-1c:S125Á"Remove the commented out code.(¨ıÏı
-1c:S125â"Remove the commented out code.(”ôĞÕ
-1c:S125˜!"Remove the commented out code.(Û”ïï
-1c:S125°#"Remove the commented out code.(¨ıÏı
-1c:S125Â$"Remove the commented out code.(¨ıÏı
-Rc:S859Ÿ%":cast from 'const void *' to 'char *' drops const qualifier(ğ­«·ÿÿÿÿÿ
-Mc:S859 %":cast from 'const void *' to 'char *' drops const qualifier(¥‰‘
-1c:S125Ú&"Remove the commented out code.(¨ıÏı
-1c:S125ı&"Remove the commented out code.(óÉ”“
-1c:S125Ì'"Remove the commented out code.(Çòï»
-6c:S125ä'"Remove the commented out code.(€øú€ûÿÿÿÿ
-0c:S125ù'"Remove the commented out code.(¢˜äj
-1c:S125Ÿ("Remove the commented out code.(Õì×‹
-6c:S125°("Remove the commented out code.(š¼µğùÿÿÿÿ
-1c:S125·("Remove the commented out code.(éÅÃ
-6c:S125Ä("Remove the commented out code.(÷óã”şÿÿÿÿ
-1c:S125Í("Remove the commented out code.(š°Ò›
-6c:S125Ï("Remove the commented out code.(ÑòŞ›ÿÿÿÿÿ
-1c:S125â("Remove the commented out code.(¡áÿå
-6c:S125æ("Remove the commented out code.(«æ¸åûÿÿÿÿ
-1c:S125ğ("Remove the commented out code.(ÌÎı°
-1c:S125÷("Remove the commented out code.(…áï
-6c:S125ú("Remove the commented out code.(øÚáıÿÿÿÿ
-6c:S125“)"Remove the commented out code.(Àôÿ«şÿÿÿÿ
-6c:S125š)"Remove the commented out code.(©áÿıÿÿÿÿ
-6c:S125 )"Remove the commented out code.(‚‘Ëüÿÿÿÿ
-1c:S125§)"Remove the commented out code.(Ìªà©
-6c:S125³)"Remove the commented out code.(œµîûÿÿÿÿÿ
-6c:S125º)"Remove the commented out code.(ëÃ–©øÿÿÿÿ
-6c:S125Í)"Remove the commented out code.(èŸ˜ıÿÿÿÿ
-1c:S125Ö)"Remove the commented out code.(«¯ı­
-6c:S125ä)"Remove the commented out code.(Ô¢ÈÁøÿÿÿÿ
-1c:S125ò)"Remove the commented out code.(÷ˆ…
-6c:S125­*"Remove the commented out code.(Ú˜³ˆúÿÿÿÿ
-Mc:S859È+":cast from 'const char *' to 'char *' drops const qualifier(ÎÚß„
-Mc:S859À,":cast from 'const char *' to 'char *' drops const qualifier(ÎÚß„
-Mc:S859ù,":cast from 'const char *' to 'char *' drops const qualifier(ÎÚß„
-6c:S125±."Remove the commented out code.(Éë„ºúÿÿÿÿ
-1c:S125¸."Remove the commented out code.(õ»ßĞ
-6c:S125Ï."Remove the commented out code.(ñ–´¤ùÿÿÿÿ
-Dc:S1659‰
-"0Define each identifier in a dedicated statement.(´Ÿ—·
-]c:S954³"JMove all #include directives to the very top of the file, before any code.(‚§çç
-3c:S923Á" Remove use of ellipsis notation.(ÑÜñâ
-2c:S923È" Remove use of ellipsis notation.(ÎŒ¾R
-pc:S5350Ê"WMake the type of this variable a pointer-to-const. The current type of "s" is "char *".(õÀÔûøÿÿÿÿ
-Ic:S1659†"0Define each identifier in a dedicated statement.(¿ÿ©Ìüÿÿÿÿ
-4c:S1905½"Remove this redundant cast.(›İÚûÿÿÿÿ
-:c:S1110½"!Remove these useless parentheses.(›İÚûÿÿÿÿ
-€c:S995"hMake the type of this parameter a pointer-to-const. The current type of "h" is "struct arg_hashtable *".(ÛÿØşÿÿÿÿ
-=c:S5955â")Declare the variable "i" inside the loop.(å˜ğŒ
-€c:S995ò"hMake the type of this parameter a pointer-to-const. The current type of "h" is "struct arg_hashtable *".(ùê…öüÿÿÿÿ
-Ic:S1659¾"0Define each identifier in a dedicated statement.(¤à¯•øÿÿÿÿ
-Bc:S5955ç")Declare the variable "i" inside the loop.(öòÙ²ıÿÿÿÿ
-pc:S995¿"XMake the type of this parameter a pointer-to-const. The current type of "k" is "void *".(á—ıŒûÿÿÿÿ
-pc:S995Ù"XMake the type of this parameter a pointer-to-const. The current type of "k" is "void *".(À¹„éûÿÿÿÿ
-2c:S923Å" Remove use of ellipsis notation.(ÌÍ“
-Ic:S1659È"0Define each identifier in a dedicated statement.(ùáÀñÿÿÿÿÿ
-:c:S1110Í"!Remove these useless parentheses.(®®’»şÿÿÿÿ
-=c:S5955ä")Declare the variable "i" inside the loop.(ø×öİ
-=c:S5955ç")Declare the variable "j" inside the loop.(©ÃŞÆ
-Dc:S1659Ù"0Define each identifier in a dedicated statement.(êÚ´ï
-mc:S3776û"TRefactor this function to reduce its Cognitive Complexity from 55 to the 25 allowed.(˜±š¾ÿÿÿÿÿ
-Bc:S5955£")Declare the variable "i" inside the loop.(å¼¢¤ùÿÿÿÿ
-Cc:S1659ş"0Define each identifier in a dedicated statement.(ÜøÈ#
-Dc:S1659ƒ"0Define each identifier in a dedicated statement.(è“äî
-4c:S1110–"!Remove these useless parentheses.(¾¸Ô
-hc:S3776 "TRefactor this function to reduce its Cognitive Complexity from 90 to the 25 allowed.(ÎûÓ«
-`c:S134ì"MRefactor this code to not nest more than 3 if|for|do|while|switch statements.(Ğ‚€Ó
-Ic:S1659¤"0Define each identifier in a dedicated statement.(‘îŒÅûÿÿÿÿ
-Zc:S3222É"GRename label "start" to match the regular expression: ^[A-Z][A-Z0-9_]*$(Ùé¨(
-rc:S5350£"YMake the type of this variable a pointer-to-const. The current type of "oli" is "char *".(ƒ¡úšüÿÿÿÿ
-Zc:S999€"GThis goto statement must be replaced by a standard iteration statement.(½î­Ö
-[c:S912ˆ"HRemove any side effects from right hand operands of logical && operator.(Ÿã£š
-:c:S1110³"!Remove these useless parentheses.(Ïèâüÿÿÿÿ
-`c:S912¸"HRemove any side effects from right hand operands of logical || operator.(á¡öıÿÿÿÿ
-/c:S1905·"Remove this redundant cast.(Œ„Ùü
-4c:S1905¸"Remove this redundant cast.(á¡öıÿÿÿÿ
-/c:S1905¿"Remove this redundant cast.(íÆ“ì
-:c:S1110à"!Remove these useless parentheses.(Ïèâüÿÿÿÿ
-:c:S1110÷"!Remove these useless parentheses.(Ïèâüÿÿÿÿ
-€c:S995ù"hMake the type of this parameter a pointer-to-const. The current type of "parent" is "struct arg_date *".(˜Ùîßúÿÿÿÿ
-Fc:S131‚".Add a "default" case to this switch statement.(ú–Õéùÿÿÿÿ
-ic:S3776¤"URefactor this function to reduce its Cognitive Complexity from 137 to the 25 allowed.(Ø„‡
-`c:S134"MRefactor this code to not nest more than 3 if|for|do|while|switch statements.(ÿÑıÇ
-ec:S134”"MRefactor this code to not nest more than 3 if|for|do|while|switch statements.(é™úûÿÿÿÿ
-ec:S134§"MRefactor this code to not nest more than 3 if|for|do|while|switch statements.(ë‹ûÿÿÿÿ
-ec:S134¬"MRefactor this code to not nest more than 3 if|for|do|while|switch statements.(ò˜Üæÿÿÿÿÿ
-ec:S134ø"MRefactor this code to not nest more than 3 if|for|do|while|switch statements.(‘Äğ¯úÿÿÿÿ
-ec:S134€"MRefactor this code to not nest more than 3 if|for|do|while|switch statements.(‘Äğ¯úÿÿÿÿ
-Ic:S1659¨"0Define each identifier in a dedicated statement.(Ş¨¤øÿÿÿÿ
-Xc:S924¬"EReduce the number of nested "goto" statements from 3 to 1 authorized.(Ò¼é•
-[c:S3222¼"GRename label "again" to match the regular expression: ^[A-Z][A-Z0-9_]*$(Ó¼÷é
-œc:S1909º"‚Remove this "goto" statement or rewrite it so that it jumps to a label that is located in the same scope or in an enclosing scope.(“¯Æùÿÿÿÿ
-Qc:S1479½"8Reduce the number of switch cases from 35 to at most 30.(ôĞ”åøÿÿÿÿ
-„c:S1116É"kModify the macro definition so that it needs to be followed by a semicolon, or remove this empty statement.(ãÜÛ¢ıÿÿÿÿ
-_c:S999Ë"GThis goto statement must be replaced by a standard iteration statement.(ü¨ş•şÿÿÿÿ
-„c:S1116Î"kModify the macro definition so that it needs to be followed by a semicolon, or remove this empty statement.(ãÜÛ¢ıÿÿÿÿ
-_c:S999Ğ"GThis goto statement must be replaced by a standard iteration statement.(ü¨ş•şÿÿÿÿ
-c:S1116Ö"kModify the macro definition so that it needs to be followed by a semicolon, or remove this empty statement.(‚È³ò
-„c:S1116İ"kModify the macro definition so that it needs to be followed by a semicolon, or remove this empty statement.(ãÜÛ¢ıÿÿÿÿ
-„c:S1116ä"kModify the macro definition so that it needs to be followed by a semicolon, or remove this empty statement.(ãÜÛ¢ıÿÿÿÿ
-„c:S1116ë"kModify the macro definition so that it needs to be followed by a semicolon, or remove this empty statement.(ãÜÛ¢ıÿÿÿÿ
-„c:S1116ò"kModify the macro definition so that it needs to be followed by a semicolon, or remove this empty statement.(ãÜÛ¢ıÿÿÿÿ
-c:S1116ù"kModify the macro definition so that it needs to be followed by a semicolon, or remove this empty statement.(‚È³ò
-c:S1116€"kModify the macro definition so that it needs to be followed by a semicolon, or remove this empty statement.(‚È³ò
-„c:S1116‹"kModify the macro definition so that it needs to be followed by a semicolon, or remove this empty statement.(ãÜÛ¢ıÿÿÿÿ
-Yc:S924Œ"FReduce the number of nested "break" statements from 2 to 1 authorized.(îĞ’œ
-„c:S1116£"kModify the macro definition so that it needs to be followed by a semicolon, or remove this empty statement.(ãÜÛ¢ıÿÿÿÿ
-Yc:S924¤"FReduce the number of nested "break" statements from 2 to 1 authorized.(•ÙÈˆ
-c:S1116¹"kModify the macro definition so that it needs to be followed by a semicolon, or remove this empty statement.(‚È³ò
-„c:S1116Ç"kModify the macro definition so that it needs to be followed by a semicolon, or remove this empty statement.(å¿ıÓúÿÿÿÿ
-„c:S1116Í"kModify the macro definition so that it needs to be followed by a semicolon, or remove this empty statement.(ãÜÛ¢ıÿÿÿÿ
-„c:S1116Ğ"kModify the macro definition so that it needs to be followed by a semicolon, or remove this empty statement.(å¿ıÓúÿÿÿÿ
-„c:S1116Ö"kModify the macro definition so that it needs to be followed by a semicolon, or remove this empty statement.(ãÜÛ¢ıÿÿÿÿ
-„c:S1116Ù"kModify the macro definition so that it needs to be followed by a semicolon, or remove this empty statement.(å¿ıÓúÿÿÿÿ
-„c:S1116á"kModify the macro definition so that it needs to be followed by a semicolon, or remove this empty statement.(ãÜÛ¢ıÿÿÿÿ
-„c:S1116è"kModify the macro definition so that it needs to be followed by a semicolon, or remove this empty statement.(å¿ıÓúÿÿÿÿ
-„c:S1116î"kModify the macro definition so that it needs to be followed by a semicolon, or remove this empty statement.(å¿ıÓúÿÿÿÿ
-„c:S1116õ"kModify the macro definition so that it needs to be followed by a semicolon, or remove this empty statement.(ãÜÛ¢ıÿÿÿÿ
-„c:S1116Œ"kModify the macro definition so that it needs to be followed by a semicolon, or remove this empty statement.(å¿ıÓúÿÿÿÿ
-„c:S1116“"kModify the macro definition so that it needs to be followed by a semicolon, or remove this empty statement.(å¿ıÓúÿÿÿÿ
-„c:S1116Ÿ"kModify the macro definition so that it needs to be followed by a semicolon, or remove this empty statement.(å¿ıÓúÿÿÿÿ
-c:S1116¥"kModify the macro definition so that it needs to be followed by a semicolon, or remove this empty statement.(‚È³ò
-„c:S1116­"kModify the macro definition so that it needs to be followed by a semicolon, or remove this empty statement.(Å–Ğÿÿÿÿÿ
-„c:S1116Á"kModify the macro definition so that it needs to be followed by a semicolon, or remove this empty statement.(ãÜÛ¢ıÿÿÿÿ
-;c:S1219¿"'Remove this misleading "literal" label.(˜¨ÒÒ
-]c:S3222¿"IRename label "literal" to match the regular expression: ^[A-Z][A-Z0-9_]*$(˜¨ÒÒ
-4c:S1110Á"!Remove these useless parentheses.(¾¸Ô
-4c:S1110Ù"!Remove these useless parentheses.(¾¸Ô
-4c:S1110à"!Remove these useless parentheses.(¾¸Ô
-4c:S1110ç"!Remove these useless parentheses.(¾¸Ô
-4c:S1110î"!Remove these useless parentheses.(¾¸Ô
-4c:S1110õ"!Remove these useless parentheses.(¾¸Ô
-4c:S1110ü"!Remove these useless parentheses.(¾¸Ô
-4c:S1110ƒ"!Remove these useless parentheses.(¾¸Ô
-4c:S1110š"!Remove these useless parentheses.(¾¸Ô
-4c:S1110²"!Remove these useless parentheses.(¾¸Ô
-4c:S1110»"!Remove these useless parentheses.(¾¸Ô
-4c:S1110É"!Remove these useless parentheses.(¾¸Ô
-4c:S1110Ò"!Remove these useless parentheses.(¾¸Ô
-4c:S1110Û"!Remove these useless parentheses.(¾¸Ô
-4c:S1110ã"!Remove these useless parentheses.(¾¸Ô
-4c:S1110ê"!Remove these useless parentheses.(¾¸Ô
-4c:S1110ğ"!Remove these useless parentheses.(¾¸Ô
-4c:S1110ù"!Remove these useless parentheses.(¾¸Ô
-4c:S1110"!Remove these useless parentheses.(¾¸Ô
-4c:S1110‰"!Remove these useless parentheses.(¾¸Ô
-4c:S1110"!Remove these useless parentheses.(¾¸Ô
-4c:S1110›"!Remove these useless parentheses.(¾¸Ô
-4c:S1110¡"!Remove these useless parentheses.(¾¸Ô
-4c:S1110§"!Remove these useless parentheses.(¾¸Ô
-4c:S1110¯"!Remove these useless parentheses.(¾¸Ô
-4c:S1110Ç"!Remove these useless parentheses.(¾¸Ô
-4c:S1110Ö"!Remove these useless parentheses.(¾¸Ô
-4c:S1110ß"!Remove these useless parentheses.(¾¸Ô
-:c:S1110â"!Remove these useless parentheses.(‘Ëéºşÿÿÿÿ
-c:S995µ"gMake the type of this parameter a pointer-to-const. The current type of "parent" is "struct arg_dbl *".(şĞ¿ñûÿÿÿÿ
-Fc:S131¾".Add a "default" case to this switch statement.(ú–Õéùÿÿÿÿ
-oc:S995°"]Make the type of this parameter a pointer-to-const. The current type of "parent" is "void *".(œÍğy
-=c:S5955ø")Declare the variable "i" inside the loop.(Ã«ê«
-|c:S995õ"dMake the type of this parameter a pointer-to-const. The current type of "end" is "struct arg_end *".(ÈÎ«°üÿÿÿÿ
-c:S5350ù"kMake the type of this variable a pointer-to-const. The current type of "errorparent" is "struct arg_hdr *".(àŸ‰¶
-Ic:S1659½"0Define each identifier in a dedicated statement.(ÑŠá…úÿÿÿÿ
-€c:S995‡"hMake the type of this parameter a pointer-to-const. The current type of "parent" is "struct arg_file *".(Ãò¢³üÿÿÿÿ
-Bc:S5955Ì")Declare the variable "i" inside the loop.(Ë¯¡²ıÿÿÿÿ
-mc:S3776ß"TRefactor this function to reduce its Cognitive Complexity from 42 to the 25 allowed.(İÊ“¥úÿÿÿÿ
-ec:S134ö"MRefactor this code to not nest more than 3 if|for|do|while|switch statements.(ëü¿‰úÿÿÿÿ
-c:S995¦"gMake the type of this parameter a pointer-to-const. The current type of "parent" is "struct arg_int *".(ıŒ‚ßùÿÿÿÿ
-zc:S995¬"gMake the type of this parameter a pointer-to-const. The current type of "parent" is "struct arg_int *".(¬üÁš
-Fc:S131µ".Add a "default" case to this switch statement.(ú–Õéùÿÿÿÿ
-Fc:S131¹".Add a "default" case to this switch statement.(ú–Õéùÿÿÿÿ
-}c:S5350¶"dMake the type of this variable a pointer-to-const. The current type of "priv" is "struct privhdr *".(Ê…©ãøÿÿÿÿ
-c:S995É"gMake the type of this parameter a pointer-to-const. The current type of "parent" is "struct arg_rex *".(¢Ñ›ûÿÿÿÿ
-zc:S995Ö"gMake the type of this parameter a pointer-to-const. The current type of "parent" is "struct arg_rex *".(ñí”€
-Bc:S5955·")Declare the variable "i" inside the loop.(ªœËÇşÿÿÿÿ
-Zc:S107"GThis function has 8 parameters, which is greater than the 7 authorized.(â¿ŒÖ
-/c:S1905¦"Remove this redundant cast.(±—˜¥
-Qc:S5825ó"8Define the type with "typedef" instead of using a macro.(›ıìıüÿÿÿÿ
-Ic:S1659•"0Define each identifier in a dedicated statement.(ß¤‚ şÿÿÿÿ
-Ic:S1659¡"0Define each identifier in a dedicated statement.(›Àœ×ıÿÿÿÿ
-5c:S1116Ï"Remove this empty statement.(ôŸìúÿÿÿÿ
-Qc:S1199÷"8Extract this nested code block into a separate function.(ÒÌâ–øÿÿÿÿ
-Ic:S1659×"0Define each identifier in a dedicated statement.(ÍÏŸÖûÿÿÿÿ
-Ic:S1659ù"0Define each identifier in a dedicated statement.(ÇÆ•éûÿÿÿÿ
-@c:S131ú".Add a "default" case to this switch statement.(¡Íók
-5c:S1110ª "!Remove these useless parentheses.(é‹Ñ«
-Ic:S1659¸ "0Define each identifier in a dedicated statement.(Ø‚»Õüÿÿÿÿ
-Dc:S1659Ä "0Define each identifier in a dedicated statement.(Á²í
-Ac:S131Ğ ".Add a "default" case to this switch statement.(¹¨õ‘
-mc:S3776õ "TRefactor this function to reduce its Cognitive Complexity from 39 to the 25 allowed.(“ÃıŞûÿÿÿÿ
-`c:S134ú "MRefactor this code to not nest more than 3 if|for|do|while|switch statements.(­ßşÅ
-ec:S134ü "MRefactor this code to not nest more than 3 if|for|do|while|switch statements.(›Ê£Àøÿÿÿÿ
-`c:S134ÿ "MRefactor this code to not nest more than 3 if|for|do|while|switch statements.(Ï¿§
-`c:S134‰!"MRefactor this code to not nest more than 3 if|for|do|while|switch statements.(×ğøÆ
-ec:S134Œ!"MRefactor this code to not nest more than 3 if|for|do|while|switch statements.(Úå§ùÿÿÿÿ
-c:S995õ "iMake the type of this parameter a pointer-to-const. The current type of "node" is "struct tagTRexNode *".(“ÃıŞûÿÿÿÿ
-`c:S912!"HRemove any side effects from right hand operands of logical && operator.(›®ø‡øÿÿÿÿ
-nc:S3776”!"URefactor this function to reduce its Cognitive Complexity from 128 to the 25 allowed.(‡è«šÿÿÿÿÿ
-ec:S134¬!"MRefactor this code to not nest more than 3 if|for|do|while|switch statements.(³ÁÀ“ıÿÿÿÿ
-`c:S134ò!"MRefactor this code to not nest more than 3 if|for|do|while|switch statements.(¡¿îí
-c:S995”!"iMake the type of this parameter a pointer-to-const. The current type of "node" is "struct tagTRexNode *".(‡è«šÿÿÿÿÿ
-Dc:S1659š!"0Define each identifier in a dedicated statement.(íî„«
-Cc:S1659›!"0Define each identifier in a dedicated statement.(‡ÒÂ7
-4c:S1110£!"!Remove these useless parentheses.(ÉÍ°|
-Xc:S924£!"FReduce the number of nested "break" statements from 5 to 1 authorized.(ÉÍ°|
-Jc:S1066¬!"1Merge this "if" statement with the enclosing one.(³ÁÀ“ıÿÿÿÿ
-`c:S912ø!"HRemove any side effects from right hand operands of logical && operator.(œ³¨×úÿÿÿÿ
-Lc:S1199Œ""8Extract this nested code block into a separate function.(ßÃÈë
-[c:S3358’""GExtract this nested conditional operator into an independent statement.(¨Ú…«
-[c:S3358“""GExtract this nested conditional operator into an independent statement.(ìôŸÉ
-yc:S995#"aMake the type of this parameter a pointer-to-const. The current type of "exp" is "struct TRex *".(ñåĞıÿÿÿÿ
-tc:S995‘#"aMake the type of this parameter a pointer-to-const. The current type of "exp" is "struct TRex *".(Ó®ˆø
-=c:S5955Ã#")Declare the variable "i" inside the loop.( ¨Ğ¿
-c:S995ã#"gMake the type of this parameter a pointer-to-const. The current type of "parent" is "struct arg_str *".(¼×€üÿÿÿÿ
-Fc:S131ì#".Add a "default" case to this switch statement.(ú–Õéùÿÿÿÿ
-Bc:S5955£$")Declare the variable "i" inside the loop.(ªœËÇşÿÿÿÿ
-Dc:S1659í$"0Define each identifier in a dedicated statement.(×©ùÂ
-qc:S5350Ÿ%"XMake the type of this variable a pointer-to-const. The current type of "k1" is "char *".(ğ­«·ÿÿÿÿÿ
-lc:S5350 %"XMake the type of this variable a pointer-to-const. The current type of "k2" is "char *".(¥‰‘
-†c:S5350Ü%"mMake the type of this variable a pointer-to-const. The current type of "cmd_info" is "struct arg_cmd_info *".(å¿–ùÿÿÿÿ
-Dc:S5955'"0Declare the variable "tabindex" inside the loop.(‡ùµÊ
-tc:S5350Ü'"`Make the type of this variable a pointer-to-const. The current type of "storestart" is "char *".(ãÈÓò
-wc:S5350…("cMake the type of this variable a pointer-to-const. The current type of "hdr" is "struct arg_hdr *".(Š¿
-wc:S5350’("cMake the type of this variable a pointer-to-const. The current type of "hdr" is "struct arg_hdr *".(Š¿
-hc:S3776«("TRefactor this function to reduce its Cognitive Complexity from 30 to the 25 allowed.(¶ğ¯ö
-ec:S134Õ("MRefactor this code to not nest more than 3 if|for|do|while|switch statements.(¡÷íîúÿÿÿÿ
-ec:S134ı("MRefactor this code to not nest more than 3 if|for|do|while|switch statements.(í°ƒüıÿÿÿÿ
-_c:S1301à("KReplace this "switch" statement by "if" statements to increase readability.(•Ó‘¥
-Bc:S5955*")Declare the variable "i" inside the loop.(ğ†¿ˆÿÿÿÿÿ
-rc:S5350¸*"YMake the type of this variable a pointer-to-const. The current type of "end" is "char *".(Õ¶Áÿÿÿÿÿ
-vc:S5350Ú+"]Make the type of this variable a pointer-to-const. The current type of "format1" is "char *".(”Ñ£øÿÿÿÿ
-qc:S5350Û+"]Make the type of this variable a pointer-to-const. The current type of "format2" is "char *".(ìì°÷
-Cc:S5955‘,"0Declare the variable "tabindex" inside the loop.(İñç
-Bc:S5955 ,")Declare the variable "i" inside the loop.(£Ïã€ıÿÿÿÿ
-Ic:S1659‹,"0Define each identifier in a dedicated statement.(ªÃ•ãúÿÿÿÿ
-Dc:S1659“,"0Define each identifier in a dedicated statement.(½€Û¼
-Cc:S5955Ğ,"0Declare the variable "tabindex" inside the loop.(İñç
-Bc:S5955Ú,")Declare the variable "i" inside the loop.(£Ïã€ıÿÿÿÿ
-Ic:S1659Í,"0Define each identifier in a dedicated statement.(ªÃ•ãúÿÿÿÿ
-Dc:S1659Ò,"0Define each identifier in a dedicated statement.(½€Û¼
-Dc:S5955‰-"0Declare the variable "tabindex" inside the loop.(‡ùµÊ
-=c:S5955ï-")Declare the variable "i" inside the loop.(‰¹ù
-Dc:S5955…."0Declare the variable "tabindex" inside the loop.(‡ùµÊ
-Ic:S5955æ."0Declare the variable "tabindex" inside the loop.(ÖÄèÿÿÿÿÿ
-5c:S1116ì."Remove this empty statement.(ôŸìúÿÿÿÿ
-Qc:S2637	"8Null pointer passed to 1st parameter expecting 'nonnull'(Æ›ÿ‡üÿÿÿÿ
-Zc:S3519Æ"GOut of bound memory access (access exceeds upper limit of memory block)(ù¿›K
-8c:S1854½"%Value stored to 'chain' is never read(´Øº
->c:S1854¾"%Value stored to 'first' is never read(ùñˆóûÿÿÿÿ
-4c:S2259("Dereference of null pointer(ĞıËÚüÿÿÿÿ
-[c:S3519Ğ("BOut of bound memory access (accessed memory precedes memory block)(…®üûÿÿÿÿ
-[c:S3519ã("BOut of bound memory access (accessed memory precedes memory block)(ª˜î³ÿÿÿÿÿ
-[c:S3519ñ("BOut of bound memory access (accessed memory precedes memory block)(…®üûÿÿÿÿ
-Vc:S3519*"BOut of bound memory access (accessed memory precedes memory block)(—¡Àª
-1c:S125å."Remove the commented out code.(¢´êâ
