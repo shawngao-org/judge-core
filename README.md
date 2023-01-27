@@ -20,9 +20,9 @@
 <p align="center">
   <br />
 </p>
-#### 上手指南
 
-###### 开发前的配置要求
+
+##### **开发前的配置要求**
 
 1. 开发工具: CLion 2022.1.3 (需要配置远程开发, 除非开发机器是Linux环境, 不会配置可以移步至[Google](https://www.google.com/)或者[Baidu](https://www.baidu.com/))
 2. 系统: Ubuntu / Debian / CentOS[不推荐，且尚未测试]
