@@ -25,7 +25,7 @@
 ##### **开发前的配置要求**
 
 1. 开发工具: CLion 2022.1.3 (需要配置远程开发, 除非开发机器是Linux环境, 不会配置可以移步至[Google](https://www.google.com/)或者[Baidu](https://www.baidu.com/))
-2. 系统: Ubuntu / Debian / CentOS[不推荐，且尚未测试]
+2. 系统: Ubuntu22.04[已测试, 已发布构建] / Debian[未测试] / CentOS[不推荐，且尚未测试]
 2. 环境: GCC / CMake (>= 3.22) / libseccomp2 / libseccomp-dev | (如果系统为Ubuntu或者Debian可以直接进行构建, 脚本会自动检查并安装环境)
 
 ##### **构建**
