@@ -29,8 +29,6 @@ A
 src/data/config.h,4\7\47a5b87229daee98d2ebb31701b11305a681c155
 M
 src/command/command_handler.h,3\0\3048482b8813dc4208b68c7078e6413bf499dabe
-A
-src/data/config.c,b\7\b7cc8131f13da7795adf1c11d99a8bb790f34580
 G
 src/exit/exit_handler.h,2\d\2dc5016ac4ae0e48839fbb4c1478a0e44f542cc4
 M
